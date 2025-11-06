@@ -1,0 +1,137 @@
+/* CTA Connect (clean) */
+[data-tgc-cta].tgc-cta {
+  --tgc-arrow: #006aff;
+  --tgc-orb-size: clamp(330px, 35vw, 500px);
+  position: relative;
+  padding: clamp(40px, 7vw, 72px) 24px clamp(80px, 10vw, 120px);
+  background: #fff;
+  border-bottom: 0.1px solid #e4e4e4;
+  overflow: hidden;
+  isolation: isolate;
+}
+[data-tgc-cta].tgc-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(245, 247, 250, 0.78);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .25s ease;
+  z-index: 2;
+}
+[data-tgc-cta].tgc-cta:hover::before,
+[data-tgc-cta].tgc-cta:focus-within::before { opacity: 0; }
+
+.tgc-cta__orbwrap {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--tgc-orb-size) * -0.36);
+  width: var(--tgc-orb-size);
+  height: calc(var(--tgc-orb-size) * 0.72);
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+.tgc-cta__orbwrap::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% - clamp(320px, 26vw, 420px));
+  width: clamp(900px, 90vw, 1200px);
+  height: clamp(540px, 60vw, 800px);
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    85% 110% at 50% 42%,
+    rgba(255, 255, 255, 1.0) 0%,
+    rgba(255, 255, 255, 0.92) 20%,
+    rgba(226, 238, 255, 0.66) 46%,
+    rgba(226, 238, 255, 0.28) 74%,
+    rgba(226, 238, 255, 0.00) 96%
+  );
+  filter: blur(48px);
+}
+.tgc-cta__orb {
+  position: absolute;
+  inset: 0;
+  background: url("../images/schedule_your_meeting.png") center/contain no-repeat;
+  animation: tgcSpin 16s linear infinite;
+  transform-origin: 50% 50%;
+  z-index: 1;
+}
+@keyframes tgcSpin { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
+
+.tgc-cta__container { position: relative; max-width: 1280px; margin: 0 auto; text-align: center; }
+.tgc-cta__eyebrow { margin: 0 0 10px; color: #212121; font: 700 clamp(24px, 4vw, 34px)/1.3 Geist, Inter, system-ui; }
+.tgc-cta__sub { margin: 0 auto 40px; max-width: 547px; color: #212121; font: 400 clamp(16px, 2.2vw, 20px)/1.4 Inter, system-ui; }
+.tgc-cta__title { margin: 0 0 clamp(60px, 8vw, 150px); color: #2465bf; font: 700 clamp(36px, 7vw, 90px)/1 Geist, Inter, system-ui; letter-spacing: -1px; position: relative; }
+.tgc-cta__link { color: inherit; text-decoration: none; }
+.tgc-cta__label { position: relative; z-index: 3; transition: color .12s ease; }
+
+/* Prevent any global hover background/gradient from coloring the CTA title */
+.tgc-cta__title .tgc-cta__link:hover,
+.tgc-cta__title .tgc-cta__link:focus-visible{
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Also neutralize attribute-based gradient rules targeting schedule.html */
+[data-tgc-cta] .tgc-cta__title a[href$="schedule.html"]:hover,
+[data-tgc-cta] .tgc-cta__title a[href$="schedule.html"]:focus-visible{
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Title-only hover highlight: soft white panel covering the upper portion of H2 */
+.tgc-cta__title::before{ display: none !important; }
+/* removed white background effect over title */
+
+/* On hover make the H2 text white while keeping it above the overlay */
+.tgc-cta__title:hover .tgc-cta__label,
+.tgc-cta__title:focus-within .tgc-cta__label{
+  color: rgba(226, 238, 255, 0.60) !important; /* light icy blue per spec */
+}
+
+/* Safety: if duplicate rails ever exist, hide extras */
+.tgc-cta__title .tgc-cta__rail ~ .tgc-cta__rail { display: none !important; }
+
+.tgc-cta__rail { position: absolute; top: 50%; left: 50%; width: 0; transform: translate(-50%, -50%); pointer-events: none; height: 2.8em; overflow: hidden; z-index: 10; opacity: 0; transition: opacity 0s; }
+/* Rail stays visible and runs continuously */
+.tgc-cta__link:hover + .tgc-cta__rail, .tgc-cta__link:focus-visible + .tgc-cta__rail { opacity: 1 !important; }
+.tgc-cta__title:hover .tgc-cta__rail, .tgc-cta__title:focus-within .tgc-cta__rail { opacity: 1 !important; }
+
+.tgc-cta__arrow { position: absolute; top: 50%; left: -8%; transform: translateY(-50%); color: var(--tgc-arrow); font-weight: 700; line-height: 1; filter: drop-shadow(0 1px 0 rgba(255,255,255,.6)) drop-shadow(0 0 6px rgba(0,0,0,.06)); animation: tgcTravel 11s linear infinite; animation-play-state: running; /* Use custom delay to space arrows evenly across the period */
+  animation-delay: var(--delay, calc(var(--i, 0) * -0.26s)); will-change: transform; opacity: 1; }
+.tgc-cta__arrow::before { content: "→"; font-size: 48px; }
+/* Arrows are always running so they appear instantly when rail is shown */
+
+@keyframes tgcTravel { 0% { left: -8%; } 100% { left: 108%; } }
+/* Fade keyframes not used anymore to ensure no appearance delay */
+
+@media (prefers-reduced-motion: reduce) {
+  .tgc-cta__arrow { animation: none; opacity: .75; position: static; transform: none; margin-left: 6px; }
+  .tgc-cta__rail { position: relative; inset: auto; width: auto; transform: none; display: inline-flex; gap: 6px; }
+}
+.tgc-cta__orbwrap::before
+ {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% - clamp(320px, 26vw, 420px));
+    width: clamp(350px, 80vw, 400px);
+    height: clamp(440px, 60vw, 800px);
+    z-index: 0;
+    pointer-events: none;
+    background: #006bff26;
+    filter: blur(12px);
+    border-radius: 999px;
+}
+

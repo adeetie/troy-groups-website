@@ -1,0 +1,57 @@
+:root{
+  --ink: #0f0f12;
+  --muted: #5d5f66;
+  --hr: #e9eaee;
+  --maxw: 900px;
+}.pp-wrap{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 56px 16px 40px;
+}.pp-title{
+  font:
+    800 clamp(38px, 7vw, 72px) / 1.02 "Fira Sans Extra Condensed",
+    "Montserrat",
+    system-ui;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color: var(--ink);
+  margin: 36px 0 8px;
+}.pp-date{
+  color: var(--muted);
+  font:
+    600 14px / 1.6 "Inter",
+    system-ui;
+  margin-bottom: 28px;
+}.pp-lead{
+  color: #2a2b2f;
+  font:
+    400 16px / 1.8 "Inter",
+    system-ui;
+  margin-bottom: 28px;
+}.pp-section{
+  margin: 28px 0 20px;
+}.pp-section h3{
+  font:
+    700 18px / 1.5 "Inter",
+    system-ui;
+  margin: 0 0 10px;
+  color: #121316;
+}.pp-section p{
+  font:
+    400 15px / 1.8 "Inter",
+    system-ui;
+  color: #303238;
+  margin: 0 0 10px;
+}.pp-section ul{
+  margin: 6px 0 12px 18px;
+}.pp-section li{
+  margin: 4px 0;
+  font:
+    400 15px / 1.8 "Inter",
+    system-ui;
+  color: #303238;
+}.pp-hr{
+  border: 0;
+  border-top: 1px solid var(--hr);
+  margin: 28px 0;
+}

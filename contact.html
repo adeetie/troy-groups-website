@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — The Troy Groups</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.tgx.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="tgx-scope">
+      <header class="tgx-header" role="banner">
+        <div class="tgx-bar">
+          <a class="tgx-brand" href="index.html" aria-label="The Troy Groups — Home">
+            <img class="tgx-brand-logo" src="assets/images/header_logo.png" alt="The Troy Groups" />
+            <span class="tgx-brand-text">TROY GROUPS</span>
+          </a>
+
+          <nav class="tgx-nav" aria-label="Primary">
+            <a class="tgx-navlink" href="index.html" data-link="home">Home</a>
+
+            <div class="tgx-mega">
+              <button class="tgx-navlink nav__toggle" id="allpagesToggle"
+                      data-link="allpages" aria-expanded="false"
+                      aria-controls="mega-allpages" type="button">
+                All pages <span class="tgx-chev" aria-hidden="true">▾</span>
+              </button>
+
+              <div id="mega-allpages" class="tgx-megamenu" role="region" aria-label="All pages menu">
+                <div class="fc-card">
+                  <div class="fc-outline"></div>
+
+                  <div class="fc-columns">
+                    <div class="fc-col fc-col--a">
+                      <div class="fc-h"><a href="services.html" data-link="services">Services</a></div>
+                      <a class="fc-strong" href="clients.html" data-link="clients">Our Client</a>
+                      <a class="fc-strong" href="our-active-businesses.html" data-link="our-active-businesses">Our Active Businesses</a>
+                      <a class="fc-strong" href="our-strategies.html" data-link="our-strategies">Our strategies</a>
+                      <a class="fc-strong" href="our-opportunities.html" data-link="our-opportunities">Our Opportunities</a>
+                    </div>
+
+                    <div class="fc-col fc-col--b">
+                      <div class="fc-h">Important link</div>
+                      <a class="fc-link" href="privacy-policy.html" data-link="privacy-policy">Privacy &amp; Policy</a>
+                      <a class="fc-link" href="terms.html" data-link="terms">Terms and Conditions</a>
+                    </div>
+
+                    <div class="fc-col fc-col--c">
+                      <div class="fc-h">Resources</div>
+                      <a class="fc-link" href="blog.html" data-link="blog">Blog</a>
+                      <a class="fc-link" href="events.html" data-link="events">Events</a>
+                    </div>
+                  </div>
+
+                  <div class="fc-social-label">Reach out on us:</div>
+                  <div class="fc-social">
+                    <a class="fc-ico1" href="#" aria-label="Facebook">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="#0F172A"><path d="M13 22v-9h3l1-4h-4V7.5c0-1.1.3-1.8 1.9-1.8H17V2.2C16.4 2.1 15.2 2 13.8 2 10.9 2 9 3.7 9 6.9V9H6v4h3v9h4z"/></svg>
+                    </a>
+                    <a class="fc-ico2" href="#" aria-label="Instagram">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                        <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                        <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+                      </svg>
+                    </a>
+                    <a class="fc-ico3" href="#" aria-label="LinkedIn">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="#0F172A"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.3-2.7 4.8-2.7 5.1 0 6.1 3.4 6.1 7.8V24h-5v-6.7c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V24H8z"/></svg>
+                    </a>
+                  </div>
+
+                  <img class="fc-img fc-img1" src="assets/images/all_pages_img_1.png" alt="Troy Groups collage 1"/>
+                  <img class="fc-img fc-img2" src="assets/images/all_pages_img_2.png" alt="Troy Groups collage 2"/>
+                  <img class="fc-img fc-img3" src="assets/images/all_pages_img_3.png" alt="Troy Groups collage 3"/>
+                  <img class="fc-img fc-img4" src="assets/images/all_pages_img_4.png" alt="Troy Groups collage 4"/>
+                </div>
+              </div>
+            </div>
+
+            <a class="tgx-navlink" href="about.html" data-link="about">About</a>
+            <a class="tgx-navlink" href="contact.html" data-link="contact">Contact</a>
+          </nav>
+
+          <div class="tgx-ctas">
+            <a href="https://calendly.com/reach-aditibajpai/30min" class="btn tg-btn-outline">Schedule A Call ↗</a>
+            <a href="signup.html" class="btn tg-btn-outline-light">Sign Up ↗</a>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    
+    <section class="text-center" style="max-width:1280px;margin:40px auto 0;padding:0 32px;">
+      <p style="color:#6b6ef9;margin:0 0 8px;font:600 13px/1 Inter,system-ui">About us</p>
+      <h1 style="margin:0 0 8px;color:#0b1220;font:700 40px/1.2 Inter,system-ui">We’re a distributed team</h1>
+      <p style="margin:0;color:#64748b;font:400 16px/1.6 Inter,system-ui">We have offices and teams all around the world.</p>
+    </section>
+
+    <section class="tgx-map">
+            <style>
+              .tgx-map__frame { border: 0; border-radius: 0; overflow: visible; background: transparent; box-shadow: none; }
+              .tgx-map__svg { display: block; width: 100%; height: auto; }
+              .tgx-map { max-width: 1440px; margin-inline: auto; padding-inline: 32px; margin-top: 20px; }
+              .tgx-ocean { fill: #ffffff; }
+              .tgx-vignette { display: none; }
+              .tgx-borders { fill: none; stroke: #dbe1ea; stroke-width: 0.5; opacity: 0.8; }
+              .tgx-graticule { fill: none; stroke: rgba(15, 23, 42, 0.07); stroke-width: 0.45; }
+              .tgx-pinHalo { fill: #7c83f9; opacity: 0.4; filter: url(#tgxGlowAcc); }
+              .tgx-pinCore { fill: #4a4ff0; }
+              .tgx-pinPulse { fill: #4a4ff0; opacity: 0.7; animation: tgxPulseAcc 2.2s ease-out infinite; }
+              .tgx-callout-bg { fill: #fff; stroke: rgba(2, 6, 23, 0.08); filter: drop-shadow(0 8px 24px rgba(15, 23, 42, 0.08)); }
+              .tgx-callout-eyebrow { font: 10px/1 Inter, system-ui; fill: #64748b; text-anchor: middle; }
+              .tgx-callout-title { font: 700 12px/1 Inter, system-ui; fill: #0b1220; text-anchor: middle; }
+              .tgx-callout-sub { font: 11px/1.1 Inter, system-ui; fill: #0b1220; opacity: 0.75; text-anchor: middle; }
+              .tgx-flag-code { font: 700 8px/1 Inter, system-ui; fill: #ffffff; text-anchor: middle; }
+              @keyframes tgxPulseAcc { 0% { opacity: 0.9; r: 4; } 70% { opacity: 0; r: 14; } 100% { opacity: 0; r: 14; } }
+            </style>
+
+            <div class="tgx-map__frame">
+              <svg class="tgx-map__svg" viewBox="0 0 1200 470" role="img" aria-label="World map with office locations">
+                <defs>
+                  <filter id="tgxGlowAcc" x="-60%" y="-60%" width="220%" height="220%">
+                    <feGaussianBlur stdDeviation="7" result="b" />
+                    <feMerge>
+                      <feMergeNode in="b" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <pattern id="tgxDots" patternUnits="userSpaceOnUse" width="7" height="7">
+                    <circle cx="1.6" cy="1.6" r="1" fill="#cfd6e4" />
+                  </pattern>
+                </defs>
+
+                <g id="mapLayer"></g>
+                <g id="pinsLayer"></g>
+                <g id="melbCallout"></g>
+              </svg>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+            <script>
+              (function () {
+                const svg = document.querySelector(".tgx-map__svg");
+                const mapLayer = svg.querySelector("#mapLayer");
+                const pinsLayer = svg.querySelector("#pinsLayer");
+                const calloutLayer = svg.querySelector("#melbCallout");
+                const { width, height } = svg.viewBox.baseVal;
+
+                const projection = d3.geoNaturalEarth1().fitExtent(
+                  [ [20, 20], [width - 20, height - 20] ],
+                  { type: "Sphere" }
+                );
+                const path = d3.geoPath(projection);
+                const sel = d3.select(mapLayer);
+
+                sel.append("path").datum({ type: "Sphere" }).attr("class", "tgx-ocean").attr("d", path);
+
+                fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json")
+                  .then((r) => r.json())
+                  .then((topology) => {
+                    const land = topojson.feature(topology, topology.objects.countries);
+                    const landD = path(land);
+                    const defsNode = d3.select(svg).select('defs');
+                    const clip = defsNode.append('clipPath').attr('id','tgxLandClip');
+                    clip.append('path').attr('d', landD);
+                    d3.select(mapLayer)
+                      .append('rect')
+                      .attr('x', 0).attr('y', 0)
+                      .attr('width', width).attr('height', height)
+                      .attr('fill', 'url(#tgxDots)')
+                      .attr('clip-path', 'url(#tgxLandClip)');
+
+                    const cities = [
+                      { name: "San Francisco", lon: -122.4194, lat: 37.7749, eyebrow: "San Francisco, USA", title: "100 Market Street", sub: "San Francisco, CA 94105", flag: "us" },
+                      { name: "London", lon: -0.1276, lat: 51.5072, eyebrow: "London, UK", title: "100 Oxford Street", sub: "London W1D 1LL", flag: "gb" },
+                      { name: "Stockholm", lon: 18.0686, lat: 59.3293, eyebrow: "Stockholm, SE", title: "Drottninggatan 100", sub: "111 60 Stockholm", flag: "se" },
+                      { name: "Sydney", lon: 151.2093, lat: -33.8688, eyebrow: "Sydney, AUS", title: "100 George Street", sub: "Sydney NSW 2000", flag: "au" },
+                      { name: "Melbourne", lon: 144.9631, lat: -37.8136, eyebrow: "Melbourne, AUS", title: "100 Flinders Street", sub: "Company No: 2031 AU", flag: "au" },
+                      { name: "Byron Bay", lon: 153.6167, lat: -28.65, eyebrow: "Byron Bay, AUS", title: "100 Jonson Street", sub: "Byron Bay NSW 2481", flag: "au" }
+                    ];
+
+                    function renderCallout(city) {
+                      if (!city) return;
+                      const [cx, cy] = projection([city.lon, city.lat]);
+                      const cardW = 240, cardH = 110, pad = 12;
+                      const cardX = Math.max(16, Math.min(width - cardW - 16, cx - 240));
+                      const cardY = Math.max(16, Math.min(height - cardH - 16, cy - 70));
+                      const cg = d3.select(calloutLayer);
+                      cg.selectAll('*').remove();
+                      cg.append('rect').attr('x', cardX).attr('y', cardY).attr('width', cardW).attr('height', cardH).attr('rx', 12).attr('class', 'tgx-callout-bg');
+                      // Center reference
+                      const cxm = cardX + cardW / 2;
+                      // Flag avatar (centered)
+                      const fx = cxm, fy = cardY + pad + 12, fr = 9;
+                      const defs = d3.select(svg).select('defs');
+                      // refresh clip each time for reliable positioning
+                      defs.select('#tgxFlagClip').remove();
+                      defs.append('clipPath').attr('id','tgxFlagClip').append('circle').attr('cx', fx).attr('cy', fy).attr('r', fr);
+                      const cc = (city.flag ? city.flag.toUpperCase() : ((city.eyebrow||'').split(',').pop()?.trim().slice(0,2).toUpperCase() || city.name.slice(0,2).toUpperCase()));
+                      if (city.flag) {
+                        cg.append('image')
+                          .attr('x', fx - fr)
+                          .attr('y', fy - fr)
+                          .attr('width', fr*2)
+                          .attr('height', fr*2)
+                          .attr('href', `https://flagcdn.com/32/${city.flag}.png`)
+                          .attr('clip-path', 'url(#tgxFlagClip)');
+                        cg.append('circle').attr('cx', fx).attr('cy', fy).attr('r', fr + 0.8).attr('fill','none').attr('stroke','#e2e8f0');
+                      } else {
+                        // Fallback badge (never empty)
+                        cg.append('circle').attr('cx', fx).attr('cy', fy).attr('r', fr).attr('fill', '#6366f1');
+                        cg.append('text').attr('x', fx).attr('y', fy + 3).attr('class', 'tgx-flag-code').text(cc);
+                      }
+                      cg.append('text').attr('x', cxm).attr('y', cardY + pad + 30).attr('class', 'tgx-callout-eyebrow').text(city.eyebrow || city.name);
+                      cg.append('text').attr('x', cxm).attr('y', cardY + pad + 52).attr('class', 'tgx-callout-title').text(city.title || '');
+                      cg.append('text').attr('x', cxm).attr('y', cardY + pad + 70).attr('class', 'tgx-callout-sub').text(city.sub || '');
+                    }
+
+                    cities.forEach((c) => {
+                      const [x, y] = projection([c.lon, c.lat]);
+                      const g = d3.select(pinsLayer).append('g')
+                        .attr('transform', `translate(${x},${y})`)
+                        .attr('tabindex', 0)
+                        .attr('role', 'button')
+                        .attr('aria-label', `${c.name} office`)
+                        .on('mouseenter', () => renderCallout(c))
+                        .on('focus', () => renderCallout(c))
+                        .on('click', () => renderCallout(c));
+                      g.append('circle').attr('r', 14).attr('class', 'tgx-pinHalo');
+                      g.append('circle').attr('r', 6).attr('class', 'tgx-pinCore');
+                      g.append('circle').attr('r', 4).attr('class', 'tgx-pinPulse');
+                    });
+                  });
+              })();
+            </script>
+          </section>
+
+      <div class="row quick-contacts text-center g-4 mt-4">
+        <div class="col-md-4">
+          <div class="title">Support</div>
+          <div class="desc">Our friendly team is here to help.</div>
+          <a href="mailto:info@thetroygroups.com">info@thetroygroups.com</a>
+        </div>
+        <div class="col-md-4">
+          <div class="title">Sales</div>
+          <div class="desc">Questions or queries? Get in touch!</div>
+          <a href="mailto:info@thetroygroups.com">info@thetroygroups.com</a>
+        </div>
+        <div class="col-md-4">
+          <div class="title">Phone</div>
+          <div class="desc">Mon–Fri from 8am to 5pm.</div>
+          <a href="tel:+15550000000">+1 (555) 000-0000</a>
+        </div>
+      </div>
+
+      <section class="offices-band mt-5">
+        <div class="offices-inner">
+          <div class="offices-intro">
+            <small>Our locations</small>
+            <h3>Visit our offices</h3>
+            <p>Find us at these locations.</p>
+          </div>
+
+          <div class="offices-cols">
+            <div class="off-col">
+              <div class="city">Melbourne</div>
+              <div class="addr">
+                100 Flinders Street<br />Melbourne VIC 3000 AU
+              </div>
+
+              <div class="city">Sydney</div>
+              <div class="addr">100 George Street<br />Sydney NSW 2000 AU</div>
+
+              <div class="city">Byron Bay</div>
+              <div class="addr">
+                100 Jonson Street<br />Byron Bay NSW 2481 AU
+              </div>
+            </div>
+
+            <div class="off-col">
+              <div class="city">London</div>
+              <div class="addr">100 Oxford Street<br />London W1D 1LL UK</div>
+
+              <div class="city">San Francisco</div>
+              <div class="addr">
+                100 Market Street<br />San Francisco, CA 94105 USA
+              </div>
+
+              <div class="city">Sweden</div>
+              <div class="addr">
+                Drottninggatan 100<br />111 60 Stockholm, SE
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team intro block (before form) -->
+      <section class="section-pad text-center" style="max-width:1280px;margin:24px auto 0;">
+        <p class="eyebrow--accent" style="color:#6b6ef9;font-weight:700;">We’re hiring!</p>
+        <h2 class="title-xl" style="margin:0 0 12px;">Meet our team</h2>
+        <p class="lead-sm--narrow" style="margin:0 auto;">
+          Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do your best work.
+        </p>
+      </section>
+
+      <!-- Leadership grid from About page -->
+      <section class="leadership-section py-5 text-center">
+        <div class="container container-1280">
+          <div class="row justify-content-center g-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar.png" alt="Konstantinos S" /></div>
+                <h5 class="leader-name">Konstantinos S</h5>
+                <p class="leader-role">Vice President of BD</p>
+                <p class="leader-bio">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (1).png" alt="Mehmet Salih" /></div>
+                <h5 class="leader-name">Mehmet Salih</h5>
+                <p class="leader-role">IR Manager</p>
+                <p class="leader-bio">Lead engineering teams at Figma, Pitch, and Protocol Labs.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (2).png" alt="Smit Kothari" /></div>
+                <h5 class="leader-name">Smit Kothari</h5>
+                <p class="leader-role">Investment Manager</p>
+                <p class="leader-bio">Former PM for Linear, Lambda School, and On Deck.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (3).png" alt="Catia Pereira" /></div>
+                <h5 class="leader-name">Catia Pereira</h5>
+                <p class="leader-role">IR Advisor</p>
+                <p class="leader-bio">Former frontend dev for Linear, Coinbase, and Postscript.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-5" data-aos="fade-up" data-aos-delay="250">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (4).png" alt="Bhavesh Rajpara" /></div>
+                <h5 class="leader-name">Bhavesh Rajpara</h5>
+                <p class="leader-role">Research Analyst</p>
+                <p class="leader-bio">Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (5).png" alt="Sakshi Sharma" /></div>
+                <h5 class="leader-name">Sakshi Sharma</h5>
+                <p class="leader-role">Research Analyst</p>
+                <p class="leader-bio">Founding design team at Figma. Former Pleo, Stripe, and Tile.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (6).png" alt="Kei Mintzouli" /></div>
+                <h5 class="leader-name">Kei Mintzouli</h5>
+                <p class="leader-role">Investment Manager</p>
+                <p class="leader-bio">Lead user research for Slack. Contractor for Netflix and Udacity.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (7).png" alt="Regis Islamaj" /></div>
+                <h5 class="leader-name">Regis Islamaj</h5>
+                <p class="leader-role">Investment Analyst</p>
+                <p class="leader-bio">Lead CX at Wealthsimple. Former PagerDuty and Sqreen.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (8).png" alt="Akshay Shende" /></div>
+                <h5 class="leader-name">Akshay Shende</h5>
+                <p class="leader-role">Investment Analyst</p>
+                <p class="leader-bio">Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (9).png" alt="Andrea Cote" /></div>
+                <h5 class="leader-name">Andrea Cote</h5>
+                <p class="leader-role">Client Success Manager</p>
+                <p class="leader-bio">Founding design team at Figma. Former Pleo, Stripe, and Tile.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (10).png" alt="Jahnavi Gallia" /></div>
+                <h5 class="leader-name">Jahnavi Gallia</h5>
+                <p class="leader-role">IR Analyst</p>
+                <p class="leader-bio">Lead user research for Slack. Contractor for Netflix and Udacity.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="leader-card">
+                <div class="leader-img"><img src="assets/images/Avatar (11).png" alt="Rhythm Kothari" /></div>
+                <h5 class="leader-name">Rhythm Kothari</h5>
+                <p class="leader-role">IR Analyst</p>
+                <p class="leader-bio">Lead CX at Wealthsimple. Former PagerDuty and Sqreen.</p>
+                <div class="leader-social">
+                  <a href="https://twitter.com/USERNAME" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://dribbble.com/USERNAME" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    
+   <section class="gt-wrap tgx-scope-getintouch">
+  <style>
+    /* ===== Get in touch — fully scoped to .tgx-scope-getintouch ===== */
+    .tgx-scope-getintouch, .tgx-scope-getintouch * { box-sizing: border-box; }
+    .tgx-scope-getintouch { 
+      --ink-900:#181d27; --ink-700:#414651; --ink-600:#535862; --ink-500:#717680;
+      --line:#eaeaea; --field:#d5d7da; --brand:#7f56d9; --brand-600:#6941c6;
+      width:100%; max-width:1240px; margin:0 auto; padding:32px; display:grid;
+      grid-template-columns:minmax(520px,576px) minmax(480px,1fr); gap:64px; align-items:center;
+      isolation:isolate; /* contain effects */
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--ink-900);
+    }
+
+    .tgx-scope-getintouch .gt-hero {
+  margin: 0;
+  align-self: stretch;
+  height: 800px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.tgx-scope-getintouch .gt-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 20px;
+}
+
+    /* Right pane */
+    .tgx-scope-getintouch .gt-pane{ max-width:480px; width:100%; margin:0 auto; }
+    .tgx-scope-getintouch .gt-head{ margin:0 0 24px; }
+    .tgx-scope-getintouch .gt-title{ margin:0; font-weight:600; font-size:36px; line-height:44px; color:var(--ink-900); }
+    .tgx-scope-getintouch .gt-sub{ margin:8px 0 0; font-size:20px; line-height:30px; color:var(--ink-600); }
+
+    /* Tabs */
+    .tgx-scope-getintouch .gt-tabs{
+      position:relative; display:flex; gap:0; width:100%; margin-top:12px; border-bottom:1px solid var(--line);
+    }
+    .tgx-scope-getintouch .gt-tab-input{ position:absolute; opacity:0; pointer-events:none; }
+    .tgx-scope-getintouch .gt-tab{
+      flex:1 1 0; text-align:center; padding:12px 16px; cursor:pointer; user-select:none;
+      font-weight:500; font-size:16px; line-height:20px; color:rgba(0,0,0,.7); background:#fff; border:1px solid transparent; border-bottom:0; border-radius:8px 8px 0 0;
+    }
+    .tgx-scope-getintouch #gt-tab-investor:checked + .gt-tab,
+    .tgx-scope-getintouch #gt-tab-fund:checked + .gt-tab{
+      color:#0f172a; background:#fff; border-color:#000; border-bottom-color:#fff;
+      font-weight:700;
+    }
+    .tgx-scope-getintouch .gt-tab-underline{
+      position:absolute; left:0; bottom:-1px; width:50%; height:2px; background:#111827;
+      transform:translateX(0); transition:transform .25s ease; pointer-events:none;
+    }
+    .tgx-scope-getintouch #gt-tab-fund:checked ~ .gt-tab-underline{ transform:translateX(100%); }
+
+    /* Form */
+    .tgx-scope-getintouch .gt-form{ margin-top:32px; display:flex; flex-direction:column; gap:24px; }
+    .tgx-scope-getintouch .gt-row{ display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+    .tgx-scope-getintouch .gt-label{ display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:500; color:var(--ink-700); }
+    .tgx-scope-getintouch .gt-input,
+    .tgx-scope-getintouch .gt-select,
+    .tgx-scope-getintouch .gt-textarea,
+    .tgx-scope-getintouch .gt-phone-input{
+      width:100%; padding:12px 16px; border-radius:8px; border:1px solid var(--field); background:#fff;
+      box-shadow:0 1px 2px rgba(10,13,18,.05); font-size:16px; line-height:24px; color:var(--ink-900); outline:none;
+      transition:border-color .15s ease, box-shadow .15s ease;
+    }
+    .tgx-scope-getintouch .gt-input::placeholder,
+    .tgx-scope-getintouch .gt-phone-input::placeholder{ color:var(--ink-500); }
+    .tgx-scope-getintouch .gt-input:focus,
+    .tgx-scope-getintouch .gt-select:focus,
+    .tgx-scope-getintouch .gt-textarea:focus,
+    .tgx-scope-getintouch .gt-phone-input:focus{ border-color:#aaa; box-shadow:0 0 0 3px rgba(0,0,0,.06); }
+
+    /* Phone combo */
+    .tgx-scope-getintouch .gt-phone{ display:flex; align-items:center; border:1px solid var(--field); border-radius:8px; box-shadow:0 1px 2px rgba(10,13,18,.05); overflow:hidden; }
+    .tgx-scope-getintouch .gt-phone .gt-select{ border:0; border-right:1px solid var(--field); width:110px; min-width:110px; padding:12px 12px 12px 16px; background:#fff; color:var(--ink-900); }
+    .tgx-scope-getintouch .gt-phone .gt-phone-input{ border:0; border-radius:0; padding-left:16px; flex:1 1 auto; min-width:0; }
+
+    .tgx-scope-getintouch .gt-textarea{ min-height:154px; padding:10px 14px; resize:vertical; }
+
+    /* Checkbox */
+    .tgx-scope-getintouch .gt-check{ display:flex; align-items:center; gap:12px; font-size:16px; color:var(--ink-600); }
+    .tgx-scope-getintouch .gt-check input[type="checkbox"]{
+      width:20px; height:20px; border:1px solid var(--field); border-radius:6px; appearance:none; display:grid; place-items:center; background:#fff;
+    }
+    .tgx-scope-getintouch .gt-check input[type="checkbox"]:checked{
+      background:var(--brand); border-color:var(--brand);
+    }
+    .tgx-scope-getintouch .gt-check input[type="checkbox"]:checked::after{
+      content:""; width:10px; height:10px; background:#fff; clip-path:polygon(14% 44%,0 65%,50% 100%,100% 14%,80% 0,43% 62%);
+    }
+    .tgx-scope-getintouch .gt-check a{ color:var(--ink-600); text-decoration:underline; }
+
+    /* Button */
+    .tgx-scope-getintouch .gt-btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      border-radius:8px; padding:12px 20px; font-size:16px; font-weight:600; line-height:24px; cursor:pointer;
+      border:1px solid transparent;
+    }
+    .tgx-scope-getintouch .gt-btn-primary{ width:100%; background:var(--brand); color:#fff; border-color:var(--brand); box-shadow:0 1px 2px rgba(10,13,18,.05); }
+    .tgx-scope-getintouch .gt-btn-primary:hover{ background:var(--brand-600); border-color:var(--brand-600); }
+    .tgx-scope-getintouch .gt-btn-primary:disabled{ opacity:.6; cursor:not-allowed; }
+
+    /* Error state */
+    .tgx-scope-getintouch .gt-label.is-error .gt-input,
+    .tgx-scope-getintouch .gt-label.is-error .gt-textarea,
+    .tgx-scope-getintouch .gt-label.is-error .gt-select,
+    .tgx-scope-getintouch .gt-label.is-error .gt-phone{
+      border-color:#e11d48; box-shadow:0 0 0 3px rgba(225,29,72,.08);
+    }
+    .tgx-scope-getintouch .gt-error{ margin-top:6px; font-size:12px; line-height:16px; color:#c0173c; }
+
+    /* Responsive */
+    @media (max-width:1100px){
+      .tgx-scope-getintouch{ grid-template-columns:1fr; gap:32px; padding:20px; }
+      .tgx-scope-getintouch .gt-pane{ max-width:560px; }
+      .tgx-scope-getintouch .gt-row{ grid-template-columns:1fr; gap:16px; }
+    }
+  </style>
+
+  
+  <figure class="gt-hero">
+    <img src="/assets/images/contact_form_img.png" alt="Abstract cube illustration" width="576" height="800" loading="lazy">
+  </figure>
+
+  
+  <div class="gt-pane">
+    <header class="gt-head">
+      <h1 class="gt-title">Get in touch</h1>
+      <p class="gt-sub">Our friendly team would love to hear from you.</p>
+    </header>
+
+    
+    <div class="gt-tabs" role="tablist" aria-label="Contact type">
+      <input type="radio" name="gt-tab" id="gt-tab-investor" class="gt-tab-input" checked>
+      <label class="gt-tab" for="gt-tab-investor" role="tab" aria-selected="true" tabindex="0">Investor</label>
+
+      <input type="radio" name="gt-tab" id="gt-tab-fund" class="gt-tab-input">
+      <label class="gt-tab" for="gt-tab-fund" role="tab" aria-selected="false" tabindex="0">Fund Raising</label>
+
+      <span class="gt-tab-underline" aria-hidden="true"></span>
+    </div>
+
+    
+  <form class="gt-form" action="thankyou-message.html" method="get" novalidate>
+      <input type="hidden" name="contact_type" id="gt-contact-type" value="Investor">
+
+      <div class="gt-row">
+        <label class="gt-label">First name
+          <input class="gt-input" type="text" name="first_name" placeholder="First name" required>
+        </label>
+        <label class="gt-label">Last name
+          <input class="gt-input" type="text" name="last_name" placeholder="Last name" required>
+        </label>
+      </div>
+
+      <label class="gt-label">Email
+        <input class="gt-input" type="email" name="email" placeholder="you@company.com" required>
+      </label>
+
+      <label class="gt-label">Phone number
+        <div class="gt-phone">
+          <select class="gt-select" name="phone_country" aria-label="Country code">
+            <option value="US" selected>US</option>
+            <option value="IN">IN</option>
+            <option value="GB">GB</option>
+            <option value="AU">AU</option>
+            <option value="CA">CA</option>
+          </select>
+          <input class="gt-phone-input" type="tel" name="phone" placeholder="+1 (555) 000-0000">
+        </div>
+      </label>
+
+      <label class="gt-label">Message
+        <textarea class="gt-textarea" name="message" rows="6" placeholder=""></textarea>
+      </label>
+
+      <label class="gt-check">
+        <input type="checkbox" name="agree" required>
+        <span>You agree to our friendly <a href="privacy-policy.html" target="_blank" rel="noopener">privacy policy</a>.</span>
+      </label>
+
+      <button class="gt-btn gt-btn-primary" type="submit" disabled>Send message</button>
+    </form>
+  </div>
+
+  
+  <script>
+    (function(){
+      const hidden = document.getElementById('gt-contact-type');
+      const inv = document.getElementById('gt-tab-investor');
+      const fund = document.getElementById('gt-tab-fund');
+      const sync = () => hidden.value = inv.checked ? 'Investor' : 'Fund Raising';
+      inv.addEventListener('change', sync); fund.addEventListener('change', sync); sync();
+    })();
+
+    (function(){
+      const form = document.querySelector('.tgx-scope-getintouch .gt-form'); if(!form) return;
+      const btn  = form.querySelector('button[type="submit"]');
+      const F = {
+        first_name:{el:form.elements.first_name,  label:'First name',  test:v=>v.trim().length>0},
+        last_name: {el:form.elements.last_name,   label:'Last name',   test:v=>v.trim().length>0},
+        email:     {el:form.elements.email,       label:'Email',       test:v=>/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(v)},
+        phone_country:{el:form.elements.phone_country,label:'Country', test:v=>v.trim().length>0},
+        phone:     {el:form.elements.phone,       label:'Phone number',test:v=>v.replace(/[^\\d]/g,'').length>=6},
+        message:   {el:form.elements.message,     label:'Message',     test:v=>v.trim().length>0},
+        agree:     {el:form.elements.agree,       label:'Agreement',   test:()=>form.elements.agree.checked}
+      };
+      let showErrors=false;
+      const wrap = el => el.closest('.gt-label, .gt-check')||el.parentElement;
+      const setErr=(el,msg)=>{ const w=wrap(el); w.classList.add('is-error'); el.setAttribute('aria-invalid','true');
+        let hint=w.querySelector('.gt-error'); if(!hint){ hint=document.createElement('div'); hint.className='gt-error'; w.appendChild(hint); } hint.textContent=msg; };
+      const clrErr=el=>{ const w=wrap(el); w.classList.remove('is-error'); el.removeAttribute('aria-invalid'); const h=w.querySelector('.gt-error'); if(h) h.remove(); };
+
+      function validate(key, visual=true){
+        const {el,label,test}=F[key]; const val=(el.type==='checkbox')?'':(el.value||''); const ok=test(val);
+        if(visual){ clrErr(el); if(!ok){ const msg=(key==='email')?'Enter a valid email address.':(key==='phone')?'Enter a valid phone number.':(key==='agree')?'Please agree to the privacy policy.':label+' is required.'; setErr(el,msg);} }
+        return ok;
+      }
+      function allValid(visual=false){
+        let ok=true; for(const k of Object.keys(F)) ok=validate(k,visual&&showErrors)&&ok;
+        if(btn){ btn.disabled=!ok; btn.setAttribute('aria-disabled', String(!ok)); } return ok;
+      }
+      for(const k of Object.keys(F)){
+        const el=F[k].el, ev=(el.type==='checkbox')?['change','blur']:['input','blur'];
+        ev.forEach(e=>el.addEventListener(e,()=>{ if(showErrors) validate(k,true); allValid(false); }));
+      }
+      allValid(false);
+      form.addEventListener('submit', e=>{ showErrors=true; const ok=allValid(true); if(!ok){ e.preventDefault(); const first=form.querySelector('[aria-invalid="true"]'); first?.focus({preventScroll:true}); first?.scrollIntoView({block:'center',behavior:'smooth'}); }});
+    })();
+  </script>
+</section>
+
+
+  <div id="site-footer" data-include="footer"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+  </body>
+</html>

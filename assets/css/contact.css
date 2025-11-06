@@ -1,0 +1,350 @@
+.page-wrap{
+  padding-block: 96px;
+}.page-wrap > .text-center, .map-wrap, .quick-contacts{
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 32px;
+}.offices-band, .section-pad{
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 32px;
+}.text-center .eyebrow{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6941c6;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+}.text-center .title-xl{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  color: #101828;
+  margin-bottom: 20px;
+}.text-center .lead-sm{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #667085;
+  margin: 0;
+}.map-wrap{
+  position: relative;
+  margin-top: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
+}.map-wrap img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  filter: saturate(0.95) contrast(1.01);
+}.hotspot{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(124, 58, 237, 0.95) 35%,
+    rgba(124, 58, 237, 0.25) 65%,
+    transparent 75%
+  );
+  box-shadow: 0 0 18px rgba(124, 58, 237, 0.45);
+  animation: pinpulse 2.2s infinite ease-out;
+}
+@keyframes pinpulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}.hs-1{
+  top: 38%;
+  left: 72%;
+}.hs-2{
+  top: 30%;
+  left: 60%;
+}.hs-3{
+  top: 60%;
+  left: 66%;
+}.hs-4{
+  top: 42%;
+  left: 38%;
+}.hs-5{
+  top: 48%;
+  left: 48%;
+}.hs-6{
+  top: 45%;
+  left: 22%;
+}.quick-contacts{
+  margin-top: 22px !important;
+}.quick-contacts .title{
+  font-weight: 600;
+  color: #111827;
+  font-size: 1rem;
+}.quick-contacts .desc{
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 2px;
+}.quick-contacts a{
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.875rem;
+}.quick-contacts a:hover{
+  text-decoration: underline;
+}.quick-contacts .col-md-4{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}.offices-band{
+  background: #006aff;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 96px 32px;
+  margin: 64px auto 0;
+}.offices-inner{
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 0;
+  display: flex;
+  gap: 48px;
+  align-items: start;
+}.offices-intro{
+  flex: 1;
+  min-width: 0;
+}.offices-intro small{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f0f4ff;
+  display: block;
+  margin: 0 0 12px;
+}.offices-intro h3{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  color: #ffffff;
+  margin: 0 0 20px;
+}.offices-intro p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #f0f4ff;
+  margin: 0;
+}.offices-cols{
+  display: flex;
+  gap: 40px;
+  flex: 2;
+  min-width: 0;
+}.off-col{
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}.off-col .city{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+}.off-col .addr{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f0f4ff;
+  margin: 8px 0 0;
+}
+
+@media (max-width: 991.98px) {.offices-inner{
+    flex-direction: column;
+    gap: 32px;
+  }.offices-cols{
+    flex-direction: column;
+    gap: 32px;
+  }.offices-band{
+    padding: 48px 24px;
+  }}.section-pad{
+  padding: 96px 32px;
+}.section-pad .eyebrow--accent{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6941c6;
+  margin-bottom: 12px;
+}.section-pad .title-xl{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  color: #101828;
+  margin: 0 0 20px;
+}.section-pad .lead-sm--narrow{
+  max-width: 768px;
+  margin-inline: auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #667085;
+}.team-grid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  max-width: 1280px;
+  margin: 64px auto 0;
+  padding-inline: 32px;
+}
+
+/* Even, centered spacing for leadership cards on Contact page */
+.leadership-section .leader-card{ display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px; }
+/* Make profile pictures round and small */
+.leadership-section .leader-img{ width:96px; height:96px; margin:0 auto 10px; border-radius:50%; overflow:hidden; }
+.leadership-section .leader-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+.leadership-section .leader-name{ margin:0; font-weight:600; }
+.leadership-section .leader-role{ margin:2px 0 0; opacity:.8; }
+.leadership-section .leader-bio{ margin:6px 0 0; min-height:40px; }
+.leadership-section .leader-social{ display:flex; gap:10px; justify-content:center; margin-top:8px; }
+
+@media (max-width: 992px) {.team-grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }}
+
+@media (max-width: 576px) {.team-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }}.team-grid .member{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}.team-grid .avatar{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  object-fit: cover;
+  box-shadow: none;
+  display: block;
+}.team-grid .name{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #101828;
+  margin: 0;
+}.team-grid .role{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6941c6;
+  margin: 0;
+}.contact-card{
+  max-width: 1280px;
+  margin: 44px auto 0;
+}.contact-card img{
+  border-radius: 14px;
+}.contact-form .form-control, .contact-form .form-select{
+  max-width: 480px;
+  height: 74px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.6rem;
+}.contact-form textarea.form-control{
+  height: 154px;
+  resize: vertical;
+}.contact-form .row .col-md-6 .form-control{
+  max-width: 224px;
+}.contact-form .form-control:focus, .contact-form .form-select:focus{
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}.contact-form .btn-primary{
+  max-width: 480px;
+  height: 48px;
+  background: #6b6ef9;
+  border-color: #6b6ef9;
+  font-weight: 600;
+}.contact-form .btn-primary:hover{
+  background: #5a5ee6;
+  border-color: #5a5ee6;
+}
+
+/* ===== Contact page refinements (overrides) ===== */
+/* Constrain common blocks to 1240px */
+.page-wrap > .text-center,
+.page-wrap > .tgx-map,
+.page-wrap > .map-wrap,
+.page-wrap > .quick-contacts,
+.offices-band,
+.section-pad {
+  max-width: 1240px;
+}
+
+/* Slightly smaller hero title/lead to tighten layout */
+.text-center .title-xl {
+  font-size: 32px;
+  line-height: 40px;
+}
+.text-center .lead-sm {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* Quick contacts below map: bigger font */
+.quick-contacts .title { font-size: 1.125rem; }
+.quick-contacts .desc { font-size: 1rem; }
+.quick-contacts a { font-size: 1rem; }
+
+/* Blue offices band: make it much smaller */
+.offices-band { padding: 56px 32px; }
+.offices-inner { gap: 32px; }
+.offices-intro h3 { font-size: 28px; line-height: 34px; }
+.offices-intro p { font-size: 16px; line-height: 24px; }
+.off-col .city { font-size: 16px; line-height: 24px; }
+@media (max-width: 991.98px) {
+  .offices-inner { gap: 20px; }
+  .offices-cols { gap: 20px; }
+  .offices-band { padding: 32px 20px; }
+}
+
+/* Team/leadership block: cap width on this page */
+.leadership-section .container,
+.page-wrap .container-1280 { max-width: 1240px; }
+
+/* ===== Spacing fixes (leadership + locations) ===== */
+/* Leadership grid: reduce vertical padding, tighter intra-row gutters, and larger gaps between rows */
+.leadership-section { padding-top: 40px; padding-bottom: 40px; }
+.leadership-section .row { --bs-gutter-y: 1rem; }
+/* More space when a new picture row starts */
+.leadership-section .container > .row + .row { margin-top: 40px; }
+@media (max-width: 576px) {
+  .leadership-section .container > .row + .row { margin-top: 28px; }
+}
+
+/* Location grid: normalize vertical rhythm between city/address pairs */
+.off-col { gap: 0; }
+.off-col .city + .addr { margin-top: 6px; }
+.off-col .addr + .city { margin-top: 16px; }
