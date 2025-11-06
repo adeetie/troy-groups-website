@@ -419,6 +419,57 @@
     }
 
     initHowWeWorks();
+
+    // Initialize case accordion functionality
+    function initCaseAccordion() {
+      document.querySelectorAll('.case__toggle').forEach((btn) => {
+        if (btn.dataset.caseBound === '1') return;
+        btn.dataset.caseBound = '1';
+
+        const toggle = (e) => {
+          if (e) e.preventDefault();
+          const caseEl = btn.closest('.case');
+          if (!caseEl) return;
+          const list = caseEl.parentElement;
+          const single = list?.dataset.accordion === 'single';
+
+          if (single && list) {
+            list.querySelectorAll('.case.is-open').forEach((c) => {
+              if (c !== caseEl) {
+                c.classList.remove('is-open');
+                const body = c.querySelector('.case__body');
+                if (body) body.hidden = true;
+                const b = c.querySelector('.case__toggle');
+                if (b) {
+                  b.setAttribute('aria-expanded', 'false');
+                  b.setAttribute('aria-label', 'Expand');
+                }
+              }
+            });
+          }
+
+          const nowOpen = !caseEl.classList.contains('is-open');
+          caseEl.classList.toggle('is-open', nowOpen);
+          const body = caseEl.querySelector('.case__body');
+          if (body) body.hidden = !nowOpen;
+          btn.setAttribute('aria-expanded', String(nowOpen));
+          btn.setAttribute('aria-label', nowOpen ? 'Collapse' : 'Expand');
+        };
+
+        btn.addEventListener('click', toggle);
+        btn.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggle();
+          }
+        });
+      });
+    }
+
+    initCaseAccordion();
+    
+    // Also initialize with a delay to ensure DOM is fully loaded
+    setTimeout(initCaseAccordion, 100);
   });
 })();
 

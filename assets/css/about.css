@@ -14,7 +14,7 @@
 .case__toggle::before{ content:"+"; font:700 18px/1 Inter, system-ui; transform: translateY(-1px); }
 .case.is-open .case__toggle{ background:#f1f6ff; border-color:#bcd3ec; color:#0b3f99; }
 .case.is-open .case__toggle::before{ content:"\00D7"; font-size:18px; transform:none; }
-.case__rule{ border:0; height:1px; background:#000; margin: 16px 0 0; }
+.case__rule{ border:0; height:1px; background:#000000; margin: 16px 0 0; }
 .case:last-child .case__rule{ display:none; }
 .case__body{ display:grid; grid-template-columns: 200px 1fr; align-items: start; gap: 24px; padding: 8px 0 18px 56px; }
 .case__logo{ width: 200px; min-height: 60px; display:grid; place-items:center; }
