@@ -345,45 +345,240 @@
 }
 
 
-@media (max-width: 991.98px) {.tgx-scope .tgx-bar{
-    padding: 10px 16px;
-    gap: 12px;
-    flex-wrap: wrap;
-  }.tgx-scope .tgx-brand{
-    flex: 1 1 auto;
-  }.tgx-scope .tgx-brand-logo{
-    width: 44px;
-  }.tgx-scope .tgx-brand-text{
-    font-size: 14px;
-  }.tgx-scope .tgx-nav{
-    order: 3;
-    flex-basis: 100%;
-    justify-content: flex-start;
-    gap: 12px;
-    flex-wrap: wrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }.tgx-scope .tgx-ctas{
-    order: 2;
-    gap: 8px;
-  }.tgx-scope .tgx-navlink{
-    font-size: 14px;
-  }.tgx-scope .tgx-btn{
-    padding: 8px 12px;
-    font-size: 13px;
+/* Hamburger Menu Styles */
+.tgx-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 10002;
+}
+
+.tgx-hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #11111a;
+  transition: all 0.3s ease;
+}
+
+.tgx-hamburger.is-open span:nth-child(1) {
+  transform: rotate(45deg) translateY(7px);
+}
+
+.tgx-hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.tgx-hamburger.is-open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-7px);
+}
+
+/* Mobile Menu */
+.tgx-mobile-menu {
+  position: fixed;
+  top: var(--tgx-header-bottom, 110px);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 10001;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  display: none;
+}
+
+.tgx-mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.tgx-mobile-nav {
+  padding: 20px;
+}
+
+.tgx-mobile-nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.tgx-mobile-nav-link {
+  display: block;
+  padding: 16px 0;
+  font: 500 16px/24px "Geist", system-ui;
+  color: #11111a;
+  text-decoration: none;
+}
+
+.tgx-mobile-nav-link:hover {
+  color: #006aff;
+}
+
+.tgx-mobile-accordion-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  background: none;
+  border: none;
+  font: 500 16px/24px "Geist", system-ui;
+  color: #11111a;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tgx-mobile-accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.tgx-mobile-accordion-toggle.is-open .tgx-mobile-accordion-icon {
+  transform: rotate(180deg);
+}
+
+.tgx-mobile-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.tgx-mobile-accordion-content.is-open {
+  max-height: 1000px;
+}
+
+.tgx-mobile-submenu {
+  padding: 8px 0 16px 16px;
+}
+
+.tgx-mobile-submenu-group {
+  margin-bottom: 16px;
+}
+
+.tgx-mobile-submenu-title {
+  font: 700 14px/20px "Inter", system-ui;
+  color: #101010;
+  margin-bottom: 8px;
+}
+
+.tgx-mobile-submenu-link {
+  display: block;
+  padding: 8px 0;
+  font: 400 14px/20px "Inter", system-ui;
+  color: #101010;
+  text-decoration: none;
+}
+
+.tgx-mobile-submenu-link:hover {
+  color: #2e6ae6;
+}
+
+.tgx-mobile-social {
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: auto;
+}
+
+.tgx-mobile-social-label {
+  color: rgba(0, 0, 0, 0.3);
+  font: 600 14px/20px "Inter", system-ui;
+  margin-bottom: 12px;
+}
+
+.tgx-mobile-social-icons {
+  display: flex;
+  gap: 18px;
+}
+
+.tgx-mobile-social-icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #0f172a;
+  border-radius: 50%;
+  background: #fff;
+}
+
+@media (max-width: 991.98px) {
+  /* Hide desktop navigation and Sign Up button on mobile */
+  .tgx-scope .tgx-nav {
+    display: none !important;
   }
-  /* Mobile: allow megamenu to open; use full-width fixed overlay positioned under the sticky header */
-  .tgx-scope #mega-allpages.tgx-megamenu{
-    left: 0;
-    right: 0;
-    transform: none;
-    width: 100vw;
-    top: var(--tgx-header-bottom, 110px);
+  
+  .tgx-scope .tgx-ctas a[href$="signup.html"] {
+    display: none !important;
+  }
+  
+  /* Hide brand text on mobile */
+  .tgx-scope .tgx-brand-text {
+    display: none !important;
+  }
+  
+  /* Show hamburger menu */
+  .tgx-hamburger {
+    display: flex;
+    flex-shrink: 0;
+  }
+  
+  .tgx-mobile-menu {
+    display: block;
+  }
+  
+  .tgx-scope .tgx-bar {
+    padding: 16px 16px;
+    gap: 12px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: auto;
+  }
+  
+  .tgx-scope .tgx-brand {
+    flex: 0 0 auto;
+    order: 1;
+  }
+  
+  .tgx-scope .tgx-brand-logo {
+    width: 40px;
+  }
+  
+  .tgx-scope .tgx-ctas {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    order: 2;
+    flex-shrink: 0;
+  }
+  
+  .tgx-scope .tgx-btn {
+    padding: 6px 12px;
+    font-size: 11px;
+    white-space: nowrap;
+    border-radius: 20px;
+  }
+  
+  .tgx-hamburger {
+    order: 3;
+  }
+  
+  /* Hide megamenu on mobile */
+  .tgx-scope #mega-allpages.tgx-megamenu {
+    display: none !important;
   }
 }
 
-
-@media (max-width: 575.98px) {.tgx-scope .tgx-btn{
+@media (max-width: 575.98px) {
+  .tgx-scope .tgx-bar {
+    padding: 12px 12px;
+  }
+  
+  .tgx-scope .tgx-brand-logo {
+    width: 36px;
+  }
+  
+  .tgx-scope .tgx-btn {
     padding: 6px 10px;
-    font-size: 12px;
-  }}
+    font-size: 10px;
+  }
+}
