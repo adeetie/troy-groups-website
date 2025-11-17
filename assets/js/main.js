@@ -508,4 +508,27 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuToggle = document.querySelector(".mobile-header__menu");
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mobileMenu.hidden === false;
+      mobileMenu.hidden = isOpen;
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    });
+
+    const sublistToggles = mobileMenu.querySelectorAll(".mobile-menu__toggle");
+    sublistToggles.forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!isExpanded));
+        const sublist = toggle.nextElementSibling;
+        if (sublist) {
+          sublist.hidden = isExpanded;
+        }
+      });
+    });
+  }
 });
