@@ -582,3 +582,18 @@
     font-size: 10px;
   }
 }
+@media (max-width: 575.98px) {
+    .tgx-scope .tgx-brand-logo {
+        width: 56px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .tgx-scope .tgx-bar {
+        padding: 16px 16px;
+        gap: 30px;
+        flex-wrap: nowrap;
+        justify-content: right;
+        min-height: auto;
+    }
+}
