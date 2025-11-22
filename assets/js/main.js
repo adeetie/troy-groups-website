@@ -575,3 +575,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+/* Locked Hero Scaling */
+/* Hero V2 - No JS needed with viewport units! */
