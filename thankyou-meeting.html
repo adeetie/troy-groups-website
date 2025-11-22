@@ -1,333 +1,329 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>You are scheduled</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>You are scheduled</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/header.tgx.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/auth.css" />
-    <link rel="stylesheet" href="assets/css/schedule.css" />
-    <script src="assets/js/main.js" defer></script>
-    <style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/header.tgx.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/auth.css" />
+  <link rel="stylesheet" href="assets/css/schedule.css" />
+  <script src="assets/js/main.js" defer></script>
+  <style>
+    .tg-thanks-wrap {
+      max-width: 1200px;
+      margin: 96px auto;
+      padding: 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 520px;
+      gap: 48px;
+    }
+
+    .tg-thanks-left h1 {
+      font: 800 48px/1.1 Inter;
+      margin: 0 0 8px;
+    }
+
+    .tg-thanks-left p {
+      font: 400 18px/1.6 Inter;
+      color: #6b7280;
+      margin: 0 0 18px;
+    }
+
+    .tg-back {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      font: 600 14px/1 Inter;
+    }
+
+    @media (max-width: 992px) {
       .tg-thanks-wrap {
-        max-width: 1200px;
-        margin: 96px auto;
-        padding: 0 32px;
-        display: grid;
-        grid-template-columns: 1fr 520px;
-        gap: 48px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 16px;
       }
+
       .tg-thanks-left h1 {
-        font: 800 48px/1.1 Inter;
-        margin: 0 0 8px;
+        font-size: 36px;
       }
-      .tg-thanks-left p {
-        font: 400 18px/1.6 Inter;
-        color: #6b7280;
-        margin: 0 0 18px;
-      }
-      .tg-back {
-        display: inline-flex;
-        gap: 8px;
-        align-items: center;
-        font: 600 14px/1 Inter;
-      }
-      @media (max-width: 992px) {
-        .tg-thanks-wrap {
-          grid-template-columns: 1fr;
-          gap: 24px;
-          padding: 0 16px;
-        }
-        .tg-thanks-left h1 {
-          font-size: 36px;
-        }
-      }
+    }
 
-      .tg-yt-card {
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        border-radius: 16px;
-        padding: 22px;
-      }
-      .tg-yt-badge {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 8px;
-      }
-      .tg-yt-badge .tick {
-        width: 20px;
-        height: 20px;
-        border-radius: 999px;
-        background: #e6f2ff;
-        display: grid;
-        place-items: center;
-      }
-      .tg-summary {
-        border: 1px solid #e5e7eb;
-        border-radius: 12px;
-        padding: 16px;
-        margin-top: 10px;
-      }
-      .tg-summary h3 {
-        margin: 0 0 8px;
-        font: 700 16px/1.2 Inter;
-      }
-      .tg-summary ul {
-        margin: 0;
-        padding-left: 18px;
-      }
-      .tg-summary li {
-        margin: 6px 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="tgx-scope">
-      <header class="tgx-header" role="banner">
-        <div class="tgx-bar">
-          <a
-            class="tgx-brand"
-            href="index.html"
-            aria-label="The Troy Groups — Home"
-          >
-            <img
-              class="tgx-brand-logo"
-              src="assets/images/header_logo.png"
-              alt="The Troy Groups"
-            />
-            <span class="tgx-brand-text">TROY GROUPS</span>
-          </a>
+    .tg-yt-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 22px;
+    }
 
-          <nav class="tgx-nav" aria-label="Primary">
-            <a class="tgx-navlink" href="index.html" data-link="home">Home</a>
+    .tg-yt-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
 
-            <div class="tgx-mega">
-              <button
-                class="tgx-navlink nav__toggle"
-                id="allpagesToggle"
-                data-link="allpages"
-                aria-expanded="false"
-                aria-controls="mega-allpages"
-                type="button"
-              >
-                All pages <span class="tgx-chev" aria-hidden="true">▾</span>
-              </button>
+    .tg-yt-badge .tick {
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: #e6f2ff;
+      display: grid;
+      place-items: center;
+    }
 
-              <div
-                id="mega-allpages"
-                class="tgx-megamenu"
-                role="region"
-                aria-label="All pages menu"
-              >
-                <div class="fc-card">
-                  <div class="fc-outline"></div>
+    .tg-summary {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 10px;
+    }
 
-                  <div class="fc-columns">
-                    <div class="fc-col fc-col--a">
-                      <div class="fc-h"><a href="services.html" data-link="services">Services</a></div>
-                      <a
-                        class="fc-strong"
-                        href="clients.html"
-                        data-link="clients"
-                        >Our Client</a
-                      >
-                      <a
-                        class="fc-strong"
-                        href="our-active-businesses.html"
-                        data-link="our-active-businesses"
-                        >Our Active Businesses</a
-                      >
-                      <a
-                        class="fc-strong"
-                        href="our-strategies.html"
-                        data-link="our-strategies"
-                        >Our strategies</a
-                      >
-                      <a
-                        class="fc-strong"
-                        href="our-opportunities.html"
-                        data-link="our-opportunities"
-                        >Our Opportunities</a
-                      >
-                    </div>
+    .tg-summary h3 {
+      margin: 0 0 8px;
+      font: 700 16px/1.2 Inter;
+    }
 
-                    <div class="fc-col fc-col--b">
-                      <div class="fc-h">Important link</div>
-                      <a
-                        class="fc-link"
-                        href="privacy-policy.html"
-                        data-link="privacy-policy"
-                        >Privacy &amp; Policy</a
-                      >
-                      <a class="fc-link" href="terms.html" data-link="terms"
-                        >Terms and Conditions</a
-                      >
-                    </div>
+    .tg-summary ul {
+      margin: 0;
+      padding-left: 18px;
+    }
 
-                    <div class="fc-col fc-col--c">
-                      <div class="fc-h">Resources</div>
-                      <a class="fc-link" href="blog.html" data-link="blog"
-                        >Blog</a
-                      >
-                      <a class="fc-link" href="events.html" data-link="events"
-                        >Events</a
-                      >
-                    </div>
+    .tg-summary li {
+      margin: 6px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tgx-scope">
+    <header class="tgx-header" role="banner">
+      <div class="tgx-bar">
+        <a class="tgx-brand" href="index.html" aria-label="The Troy Groups — Home">
+          <img class="tgx-brand-logo" src="assets/images/header_logo.png" alt="The Troy Groups" />
+          <span class="tgx-brand-text">TROY GROUPS</span>
+        </a>
+
+        <nav class="tgx-nav" aria-label="Primary">
+          <a class="tgx-navlink" href="index.html" data-link="home">Home</a>
+
+          <div class="tgx-mega">
+            <button class="tgx-navlink nav__toggle" id="allpagesToggle" data-link="allpages" aria-expanded="false"
+              aria-controls="mega-allpages" type="button">
+              All pages <span class="tgx-chev" aria-hidden="true">▾</span>
+            </button>
+
+            <div id="mega-allpages" class="tgx-megamenu" role="region" aria-label="All pages menu">
+              <div class="fc-card">
+                <div class="fc-outline"></div>
+
+                <div class="fc-columns">
+                  <div class="fc-col fc-col--a">
+                    <div class="fc-h"><a href="services.html" data-link="services">Services</a></div>
+                    <a class="fc-strong" href="clients.html" data-link="clients">Our Client</a>
+                    <a class="fc-strong" href="our-active-businesses.html" data-link="our-active-businesses">Our Active
+                      Businesses</a>
+                    <a class="fc-strong" href="our-strategies.html" data-link="our-strategies">Our strategies</a>
+                    <a class="fc-strong" href="our-opportunities.html" data-link="our-opportunities">Our
+                      Opportunities</a>
                   </div>
 
-                  <div class="fc-social-label">Reach out on us:</div>
-                  <div class="fc-social">
-                    <a class="fc-ico1" href="#" aria-label="Facebook">
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="16"
-                        height="16"
-                        fill="#0F172A"
-                      >
-                        <path
-                          d="M13 22v-9h3l1-4h-4V7.5c0-1.1.3-1.8 1.9-1.8H17V2.2C16.4 2.1 15.2 2 13.8 2 10.9 2 9 3.7 9 6.9V9H6v4h3v9h4z"
-                        />
-                      </svg>
-                    </a>
-                    <a class="fc-ico2" href="#" aria-label="Instagram">
-                       <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect
-                x="3"
-                y="3"
-                width="18"
-                height="18"
-                rx="5"
-                ry="5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              />
-              <circle
-                cx="12"
-                cy="12"
-                r="4.2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              />
-              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
-            </svg>
-                    </a>
-                    <a class="fc-ico3" href="#" aria-label="LinkedIn">
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="16"
-                        height="16"
-                        fill="#0F172A"
-                      >
-                        <path
-                          d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.3-2.7 4.8-2.7 5.1 0 6.1 3.4 6.1 7.8V24h-5v-6.7c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V24H8z"
-                        />
-                      </svg>
-                    </a>
+                  <div class="fc-col fc-col--b">
+                    <div class="fc-h">Important link</div>
+                    <a class="fc-link" href="privacy-policy.html" data-link="privacy-policy">Privacy &amp; Policy</a>
+                    <a class="fc-link" href="terms.html" data-link="terms">Terms and Conditions</a>
                   </div>
 
-                  <img
-                    class="fc-img fc-img1"
-                    src="assets/images/all_pages_img_1.png"
-                    alt="Troy Groups collage 1"
-                  />
-                  <img
-                    class="fc-img fc-img2"
-                    src="assets/images/all_pages_img_2.png"
-                    alt="Troy Groups collage 2"
-                  />
-                  <img
-                    class="fc-img fc-img3"
-                    src="assets/images/all_pages_img_3.png"
-                    alt="Troy Groups collage 3"
-                  />
-                  <img
-                    class="fc-img fc-img4"
-                    src="assets/images/all_pages_img_4.png"
-                    alt="Troy Groups collage 4"
-                  />
+                  <div class="fc-col fc-col--c">
+                    <div class="fc-h">Resources</div>
+                    <a class="fc-link" href="blog.html" data-link="blog">Blog</a>
+                    <a class="fc-link" href="events.html" data-link="events">Events</a>
+                  </div>
+                </div>
+
+                <div class="fc-social-label">Reach out on us:</div>
+                <div class="fc-social">
+                  <a class="fc-ico1" href="#" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#0F172A">
+                      <path
+                        d="M13 22v-9h3l1-4h-4V7.5c0-1.1.3-1.8 1.9-1.8H17V2.2C16.4 2.1 15.2 2 13.8 2 10.9 2 9 3.7 9 6.9V9H6v4h3v9h4z" />
+                    </svg>
+                  </a>
+                  <a class="fc-ico2" href="#" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor"
+                        stroke-width="1.8" />
+                      <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                      <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+                    </svg>
+                  </a>
+                  <a class="fc-ico3" href="#" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#0F172A">
+                      <path
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.3-2.7 4.8-2.7 5.1 0 6.1 3.4 6.1 7.8V24h-5v-6.7c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V24H8z" />
+                    </svg>
+                  </a>
+                </div>
+
+                <img class="fc-img fc-img1" src="assets/images/all_pages_img_1.png" alt="Troy Groups collage 1" />
+                <img class="fc-img fc-img2" src="assets/images/all_pages_img_2.png" alt="Troy Groups collage 2" />
+                <img class="fc-img fc-img3" src="assets/images/all_pages_img_3.png" alt="Troy Groups collage 3" />
+                <img class="fc-img fc-img4" src="assets/images/all_pages_img_4.png" alt="Troy Groups collage 4" />
+              </div>
+            </div>
+          </div>
+
+          <a class="tgx-navlink" href="about.html" data-link="about">About</a>
+          <a class="tgx-navlink" href="contact.html" data-link="contact">Contact</a>
+        </nav>
+
+        <div class="tgx-ctas">
+          <a href="schedule.html" class="tgx-btn">Schedule A Call ↗</a>
+          <a href="signup.html" class="tgx-btn tgx-btn--ghost">Sign Up ↗</a>
+        </div>
+
+        <!-- Hamburger Menu Button (Mobile Only) -->
+        <button class="tgx-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="tgx-mobile-menu">
+        <nav class="tgx-mobile-nav">
+          <div class="tgx-mobile-nav-item">
+            <a href="index.html" class="tgx-mobile-nav-link">Home</a>
+          </div>
+
+          <div class="tgx-mobile-nav-item">
+            <button class="tgx-mobile-accordion-toggle" aria-expanded="false">
+              <span>All pages</span>
+              <svg class="tgx-mobile-accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="tgx-mobile-accordion-content">
+              <div class="tgx-mobile-submenu">
+                <div class="tgx-mobile-submenu-group">
+                  <div class="tgx-mobile-submenu-title">Services</div>
+                  <a href="services.html" class="tgx-mobile-submenu-link">Services</a>
+                  <a href="clients.html" class="tgx-mobile-submenu-link">Our Client</a>
+                  <a href="our-active-businesses.html" class="tgx-mobile-submenu-link">Our Active Businesses</a>
+                  <a href="our-strategies.html" class="tgx-mobile-submenu-link">Our strategies</a>
+                  <a href="our-opportunities.html" class="tgx-mobile-submenu-link">Our Opportunities</a>
+                </div>
+                <div class="tgx-mobile-submenu-group">
+                  <div class="tgx-mobile-submenu-title">Important link</div>
+                  <a href="privacy-policy.html" class="tgx-mobile-submenu-link">Privacy & Policy</a>
+                  <a href="terms.html" class="tgx-mobile-submenu-link">Terms and Conditions</a>
+                </div>
+                <div class="tgx-mobile-submenu-group">
+                  <div class="tgx-mobile-submenu-title">Resources</div>
+                  <a href="blog.html" class="tgx-mobile-submenu-link">Blog</a>
+                  <a href="events.html" class="tgx-mobile-submenu-link">Events</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <a class="tgx-navlink" href="about.html" data-link="about">About</a>
-            <a class="tgx-navlink" href="contact.html" data-link="contact"
-              >Contact</a
-            >
-          </nav>
+          <div class="tgx-mobile-nav-item">
+            <a href="about.html" class="tgx-mobile-nav-link">About</a>
+          </div>
 
-          <div class="tgx-ctas">
-            <a href="schedule.html" class="btn tg-btn-outline"
-              >Schedule A Call ↗</a
-            >
-            <a href="signup.html" class="btn tg-btn-outline-light">Sign Up ↗</a>
+          <div class="tgx-mobile-nav-item">
+            <a href="contact.html" class="tgx-mobile-nav-link">Contact</a>
+          </div>
+        </nav>
+
+        <div class="tgx-mobile-social">
+          <div class="tgx-mobile-social-label">Reach out to us:</div>
+          <div class="tgx-mobile-social-icons">
+            <a class="tgx-mobile-social-icon" href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="#0F172A">
+                <path
+                  d="M13 22v-9h3l1-4h-4V7.5c0-1.1.3-1.8 1.9-1.8H17V2.2C16.4 2.1 15.2 2 13.8 2 10.9 2 9 3.7 9 6.9V9H6v4h3v9h4z" />
+              </svg>
+            </a>
+            <a class="tgx-mobile-social-icon" href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor"
+                  stroke-width="1.8" />
+                <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a class="tgx-mobile-social-icon" href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="#0F172A">
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.3-2.7 4.8-2.7 5.1 0 6.1 3.4 6.1 7.8V24h-5v-6.7c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V24H8z" />
+              </svg>
+            </a>
           </div>
         </div>
-      </header>
-    </div>
-    <main class="tg-thanks-wrap">
-      <section class="tg-thanks-left">
-        <h1>Thank You!</h1>
-        <p>
-          Your message has been sent! We will be in touch and contact back you
-          soon.
-        </p>
-        <a class="tg-back" href="index.html">← Back to Home</a>
-      </section>
+      </div>
+    </header>
+  </div>
+  <main class="tg-thanks-wrap">
+    <section class="tg-thanks-left">
+      <h1>Thank You!</h1>
+      <p>
+        Your message has been sent! We will be in touch and contact back you
+        soon.
+      </p>
+      <a class="tg-back" href="index.html">← Back to Home</a>
+    </section>
 
-      <aside class="tg-yt-card">
-        <div class="tg-yt-badge">
-          <div class="tick" aria-hidden="true">✓</div>
-          <div>
-            <div class="tg-cal-account" style="margin: 0">
-              You are scheduled
-            </div>
-            <div class="tg-cal-sub">
-              A calendar invitation has been sent to your email address.
-            </div>
+    <aside class="tg-yt-card">
+      <div class="tg-yt-badge">
+        <div class="tick" aria-hidden="true">✓</div>
+        <div>
+          <div class="tg-cal-account" style="margin: 0">
+            You are scheduled
+          </div>
+          <div class="tg-cal-sub">
+            A calendar invitation has been sent to your email address.
           </div>
         </div>
+      </div>
 
-        <div class="tg-summary">
-          <h3 id="event-title">Schedule confirmation</h3>
-          <ul>
-            <li id="event-name">Guest</li>
-            <li><span id="event-slot">Time pending</span></li>
-            <li id="event-tz"></li>
-            <li>Web conferencing details to follow.</li>
-          </ul>
-        </div>
-      </aside>
-    </main>
-    <div id="site-footer" data-include="footer"></div>
-    <script>
-      (function () {
-        const qs = new URLSearchParams(location.search);
-        const date = qs.get("date") || "";
-        const time = qs.get("time") || "";
-        const name = qs.get("name") || "Guest";
-        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+      <div class="tg-summary">
+        <h3 id="event-title">Schedule confirmation</h3>
+        <ul>
+          <li id="event-name">Guest</li>
+          <li><span id="event-slot">Time pending</span></li>
+          <li id="event-tz"></li>
+          <li>Web conferencing details to follow.</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+  <div id="site-footer" data-include="footer"></div>
+  <script>
+    (function () {
+      const qs = new URLSearchParams(location.search);
+      const date = qs.get("date") || "";
+      const time = qs.get("time") || "";
+      const name = qs.get("name") || "Guest";
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
 
-        document.getElementById("event-name").textContent = name;
-        document.getElementById("event-slot").textContent =
-          date && time ? `${time} — ${date}` : date || "Time pending";
-        document.getElementById("event-tz").textContent = tz;
-      })();
-    </script>
-  </body>
+      document.getElementById("event-name").textContent = name;
+      document.getElementById("event-slot").textContent =
+        date && time ? `${time} — ${date}` : date || "Time pending";
+      document.getElementById("event-tz").textContent = tz;
+    })();
+  </script>
+</body>
+
 </html>

@@ -135,3 +135,43 @@
     border-radius: 999px;
 }
 
+
+@media (max-width: 767.98px) {
+  [data-tgc-cta].tgc-cta {
+    padding: 60px 20px 120px;
+  }
+  
+  .tgc-cta__eyebrow {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .tgc-cta__sub {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .tgc-cta__title {
+    font-size: clamp(32px, 9vw, 40px);
+    line-height: 1.1;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+  }
+  
+  .tgc-cta__orbwrap {
+    width: 280px;
+    height: 280px;
+    bottom: -140px;
+  }
+  
+  .tgc-cta__orbwrap::before {
+    width: 300px;
+    height: 300px;
+    top: auto;
+    bottom: -50px;
+    filter: blur(40px);
+  }
+}
