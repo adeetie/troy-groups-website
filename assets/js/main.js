@@ -575,3 +575,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+/* Locked Hero Scaling */
+/* Hero V2 Scaling Logic */
+document.addEventListener("DOMContentLoaded", function() {
+  function initHeroV2Scaling() {
+    const designWidth = 1280;
+    const winWidth = window.innerWidth;
+    const scale = Math.min(1, winWidth / designWidth);
+    
+    const container = document.querySelector('.hero-v2-locked-scale');
+    const wrapper = document.querySelector('.hero-v2-locked-wrapper');
+    
+    if (!container || !wrapper) return;
+    
+    // Apply scale with center origin
+    container.style.transform = `scale(${scale})`;
+    container.style.transformOrigin = 'top center';
+    
+    // Set wrapper height to match scaled content height
+    wrapper.style.height = `${container.offsetHeight * scale}px`;
+  }
+
+  // Run on load and resize
+  window.addEventListener('resize', initHeroV2Scaling);
+  window.addEventListener('load', initHeroV2Scaling);
+  
+  // Initial run
+  initHeroV2Scaling();
+  
+  // Safety checks for layout stability
+  setTimeout(initHeroV2Scaling, 100);
+  setTimeout(initHeroV2Scaling, 500);
+});
