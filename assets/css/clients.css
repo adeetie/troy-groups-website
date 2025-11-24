@@ -1,16 +1,20 @@
-:root{
+:root {
   --ink: #1b1e27;
   --muted: #6f7b8f;
   --brand: #0d6efd;
   --greyband: #f9fafb;
-}.linehead{
+}
+
+.linehead {
   padding: 30px 150px;
   background: white;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-}.linehead__title{
+}
+
+.linehead__title {
   margin: 0;
   color: var(--ink);
   font-family: "Fira Sans Extra Condensed", "Montserrat", system-ui, sans-serif;
@@ -22,7 +26,9 @@
   text-align: flex-start;
   max-width: 1280px;
   width: 100%;
-}.clients-section{
+}
+
+.clients-section {
   background: transparent;
   padding: 64px 0;
   position: relative;
@@ -30,7 +36,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}.clients-wrap{
+}
+
+.clients-wrap {
   width: 980px;
   max-width: calc(100% - 32px);
   background: var(--greyband);
@@ -39,7 +47,9 @@
   padding: 48px 24px;
   position: relative;
   z-index: 1;
-}.clients-wrap.container-compact::before{
+}
+
+.clients-wrap.container-compact::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -48,14 +58,18 @@
   border-radius: var(--radius-slab);
   box-shadow: var(--shadow-slab);
   z-index: -1;
-}.clients-head{
+}
+
+.clients-head {
   text-align: center;
   margin-bottom: 28px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 24px;
-}.clients-kicker{
+}
+
+.clients-kicker {
   color: rgba(0, 106, 255, 0.9);
   font:
     600 14px/20px Inter,
@@ -67,19 +81,25 @@
   margin: 0 0 10px;
   text-transform: none;
   letter-spacing: 0;
-}.clients-title{
+}
+
+.clients-title {
   color: #101828;
   font:
     600 30px/38px Inter,
     sans-serif;
   margin: 0 0 10px;
-}.clients-sub{
+}
+
+.clients-sub {
   color: #667085;
   font:
     400 18px/26px Inter,
     sans-serif;
   margin: 0;
-}.clients-grid{
+}
+
+.clients-grid {
   display: grid;
   gap: 20px;
   margin-bottom: 0;
@@ -89,16 +109,22 @@
   width: 100%;
   padding: 0 24px;
   grid-auto-rows: 1fr;
-}.clients-grid.cols-3{
+}
+
+.clients-grid.cols-3 {
   grid-template-columns: repeat(3, 1fr);
-}.client-card{
+}
+
+.client-card {
   padding: 20px;
   min-height: 380px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   justify-content: flex-start;
-}.client-icon{
+}
+
+.client-icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -108,7 +134,9 @@
   margin-inline: auto;
   margin-bottom: 0;
   flex-shrink: 0;
-}.client-name{
+}
+
+.client-name {
   text-align: center;
   color: #101828;
   font:
@@ -116,7 +144,9 @@
     sans-serif;
   margin: 0;
   flex-shrink: 0;
-}.client-body{
+}
+
+.client-body {
   color: rgba(16, 16, 16, 0.9);
   font:
     400 13px/20px "Geist",
@@ -125,100 +155,363 @@
     sans-serif;
   flex: 1;
   overflow: hidden;
-}.client-body p{
+}
+
+.client-body p {
   margin: 0 0 8px;
-}.client-body ul{
+}
+
+.client-body ul {
   margin: 6px 0 8px 16px;
   padding-left: 0;
-}.client-body li{
+}
+
+.client-body li {
   margin: 0 0 4px;
-}.client-body a{
+}
+
+.client-body a {
   color: var(--brand);
   text-decoration: underline;
-}.client-contact{
+}
+
+.client-contact {
   margin-top: 10px;
   color: var(--brand);
   font-weight: 700;
-}.client-contact a{
+}
+
+.client-contact a {
   color: var(--brand);
-}.clients-section + section{
+}
+
+.clients-section+section {
   margin-top: 0;
-}.contact-block{
+}
+
+.contact-block {
   padding: 64px 0;
-}.contact-block__img{
+}
+
+.contact-block__img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 16px;
   box-shadow: 0 10px 28px rgba(2, 6, 23, 0.08);
-}.contact-block__title{
+}
+
+.contact-block__title {
   margin: 0 0 6px;
   color: #181d27;
   font-weight: 600;
   font-size: clamp(22px, 2.4vw, 28px);
-}.contact-block__lead{
+}
+
+.contact-block__lead {
   color: #535862;
   margin: 0 0 10px;
-}.contact-block__toggle{
+}
+
+.contact-block__toggle {
   margin: 8px 0 12px;
-}.cta{
+}
+
+.cta {
   border-top: 1px solid rgba(2, 6, 23, 0.06);
   background: #fff;
   padding: 48px 0 80px;
-}.cta__kicker{
+}
+
+.cta__kicker {
   margin: 0 0 6px;
   font-weight: 600;
   color: var(--ink);
-}.cta__sub{
+}
+
+.cta__sub {
   margin: 0 0 10px;
   color: var(--muted);
-}.cta__title{
+}
+
+.cta__title {
   margin: 0 0 10px;
   font-family: "Montserrat", system-ui, sans-serif;
   font-weight: 800;
   color: #1565f9;
   font-size: clamp(28px, 5vw, 56px);
-}.cta__img{
+}
+
+.cta__img {
   width: clamp(180px, 32vw, 360px);
   height: auto;
   display: block;
   margin: 8px auto 0;
 }
-@media (max-width: 1440px) {.linehead{
+
+@media (max-width: 1440px) {
+  .linehead {
     padding: 30px 80px;
-  }.clients-wrap{
+  }
+
+  .clients-wrap {
     width: calc(100% - 64px);
     max-width: 980px;
-  }}
-@media (max-width: 1024px) {.linehead{
+  }
+}
+
+@media (max-width: 1024px) {
+  .linehead {
     padding: 30px 48px;
-  }.clients-wrap{
+  }
+
+  .clients-wrap {
     padding: 40px 24px;
     width: calc(100% - 48px);
-  }.clients-head{
+  }
+
+  .clients-head {
     margin-bottom: 20px;
-  }}
-@media (max-width: 992px) {.clients-grid.cols-3{
+  }
+}
+
+@media (max-width: 992px) {
+  .clients-grid.cols-3 {
     grid-template-columns: 1fr;
-  }.client-card{
+  }
+
+  .client-card {
     padding: 18px;
-  }.clients-wrap{
+  }
+
+  .clients-wrap {
     padding: 32px 20px;
     width: 100%;
     max-width: calc(100% - 32px);
-  }.linehead{
+  }
+
+  .linehead {
     padding: 30px 24px;
-  }.linehead__title{
+  }
+
+  .linehead__title {
     font-size: 40px;
-  }.clients-section{
+  }
+
+  .clients-section {
     padding: 48px 0;
-  }.clients-title{
+  }
+
+  .clients-title {
     font-size: 26px;
     line-height: 34px;
-  }.clients-sub{
+  }
+
+  .clients-sub {
     font-size: 16px;
     line-height: 24px;
-  }}
-@media (prefers-reduced-motion: reduce) {*{
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
     scroll-behavior: auto;
-  }}
+  }
+}
+
+/* Mobile-specific adjustments to match reference image exactly */
+@media (max-width: 767px) {
+
+  /* Page hero */
+  .page-hero {
+    min-height: 200px;
+    padding: 0;
+  }
+
+  .page-hero__title {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 60px 24px 40px;
+  }
+
+  /* Intro layout section - "How we work" */
+  .intro-layout {
+    padding: 24px 16px;
+  }
+
+  .intro-layout__inner {
+    display: block;
+  }
+
+  .intro-layout__left,
+  .intro-layout__right {
+    width: 100%;
+  }
+
+  .intro-layout__eyebrow {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  .intro-layout__title {
+    font-size: 20px !important;
+    line-height: 1.3;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #0f172a;
+  }
+
+  .intro-layout__text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b5563;
+  }
+
+  /* Image band - adjust spacing */
+
+  .hww__img {
+    width: 100%;
+  }
+
+  /* Linehead section - "EVERY PROJECT STARTS WITH LISTENING" */
+  .linehead {
+    padding: 32px 16px;
+    background: white;
+  }
+
+  .linehead__title {
+    font-size: 24px !important;
+    line-height: 1.25;
+    text-align: left;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  /* Clients section - "Our Internal Client" */
+  .clients-section {
+    padding: 32px 0;
+  }
+
+  .clients-wrap {
+    background: transparent;
+    box-shadow: none;
+    padding: 0 16px;
+    border-radius: 0;
+  }
+
+  .clients-head {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .clients-kicker {
+    font-size: 12px;
+    color: #0066ff;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .clients-title {
+    font-size: 20px !important;
+    line-height: 1.3;
+    font-weight: 600 !important;
+    color: #0f172a;
+    margin-bottom: 8px;
+  }
+
+  .clients-sub {
+    font-size: 14px !important;
+    line-height: 1.5;
+    color: #6b7280;
+  }
+
+  /* Client cards on mobile */
+  .clients-grid {
+    padding: 0;
+    gap: 10px;
+  }
+
+  .client-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    min-height: auto;
+  }
+
+  /* Icon styling */
+  .client-icon {
+    width: 48px;
+    height: 48px;
+    background: #EBF2FF;
+    border-radius: 24px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .client-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Card title */
+  .client-name {
+    text-align: center;
+    color: #101828;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* Card body text */
+  .client-body {
+    color: rgba(16, 16, 16, 0.9);
+    font-family: 'Geist', 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .client-body p {
+    margin: 0 0 12px;
+  }
+
+  .client-body ul {
+    margin: 8px 0;
+    padding-left: 20px;
+  }
+
+  .client-body li {
+    margin-bottom: 6px;
+  }
+
+  /* External Clients section - Purple/Brand color variant */
+  .clients--external .clients-grid {
+    gap: 20px;
+  }
+
+  .clients--external .client-card {
+    padding: 20px 10px;
+  }
+
+  .clients--external .client-icon {
+    background: #F4EBFF;
+  }
+
+  .clients--external .client-icon img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(63%) saturate(1837%) hue-rotate(241deg) brightness(90%) contrast(91%);
+  }
+}
