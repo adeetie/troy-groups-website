@@ -1,0 +1,269 @@
+/* Careers Page Mobile Styles */
+
+@media (max-width: 767px) {
+  /* Our culture section - intro-layout */
+  .intro-layout {
+    padding: 32px 16px;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .intro-layout__inner {
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .intro-layout__left,
+  .intro-layout__right {
+    display: block !important;
+    visibility: visible !important;
+    width: 100% !important;
+  }
+
+  .intro-layout__eyebrow {
+    font-size: 12px;
+    line-height: 16px;
+    color: #4B4744;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .intro-layout__title {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1B1E27;
+    margin-bottom: 16px;
+  }
+
+  .intro-layout__text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #4B4744;
+  }
+
+  .intro-btn-black {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .intro-btn-black:hover {
+    background: #333;
+    transform: translateY(-1px);
+  }
+
+  /* Image section */
+  .hww__img-band {
+    padding: 0;
+    margin: 32px 0;
+  }
+
+  .hww__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Linehead section */
+  .linehead {
+    padding: 32px 12px;
+  }
+
+  .linehead__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1B1E27;
+    margin: 0;
+  }
+
+  .linehead__title br {
+    display: none;
+  }
+
+  /* Roles section - mobile styling */
+  .roles {
+    padding: 32px 16px;
+  }
+
+  .roles__head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .roles__head-left {
+    width: 100%;
+  }
+
+  .roles__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #1B1E27;
+    margin-bottom: 8px;
+  }
+
+  .roles__sub {
+    font-size: 14px;
+    line-height: 22px;
+    color: #667085;
+    margin-bottom: 16px;
+  }
+
+  .roles__filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .roles__filters .muted {
+    font-size: 14px;
+    color: #667085;
+  }
+
+  .roles__filters .select {
+    padding: 8px 32px 8px 16px;
+    background: #fff;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #344054;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23667085' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    min-width: 120px;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #EAECF0;
+    margin: 24px 0;
+  }
+
+  .roles__row {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .roles__col {
+    margin-bottom: 16px;
+  }
+
+  .roles__col h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 4px;
+  }
+
+  .roles__col .muted {
+    font-size: 14px;
+    line-height: 20px;
+    color: #667085;
+  }
+
+  .roles__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .job {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #EAECF0;
+    border-radius: 12px;
+  }
+
+  .job__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .job h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #101828;
+    margin: 0;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    background: #F9FAFB;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #344054;
+  }
+
+  .pill::before {
+    content: "📍";
+    font-size: 12px;
+  }
+
+  .job .muted {
+    font-size: 14px;
+    line-height: 20px;
+    color: #667085;
+    margin: 8px 0;
+  }
+
+  .job__meta {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .meta {
+    font-size: 14px;
+    color: #667085;
+  }
+
+  .meta:first-child::before {
+    content: "⏰ ";
+  }
+
+  .meta:last-child::before {
+    content: "💰 ";
+  }
+
+  .roles__wide {
+    margin-top: 32px;
+  }
+
+  .roles__wide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
+

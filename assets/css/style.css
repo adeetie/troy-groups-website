@@ -6076,27 +6076,32 @@ body {
 .ceo-card {
   background: linear-gradient(90deg, #0047AC 0%, #A6CDFF 100%);
   border-radius: 6px;
-  padding: 8px;
+  padding: 0;
   margin-top: 40px;
   max-width: 635px;
 }
 
 .ceo {
   display: flex;
-  gap: 16px;
-  align-items: center;
+  gap: 0;
+  align-items: stretch;
 }
 
 .ceo__img {
   width: 114px;
-  height: 143px;
-  border-radius: 4px;
+  height: auto;
+  min-height: 100%;
+  border-radius: 6px 0 0 6px;
   object-fit: cover;
 }
 
 .ceo__text {
   flex: 1;
   color: white;
+  padding: 16px 24px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ceo__name {

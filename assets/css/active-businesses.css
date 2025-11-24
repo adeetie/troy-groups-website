@@ -105,34 +105,82 @@
   .feature-band {
     padding: 32px 16px;
     background: transparent;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature-band .container-1280 {
+    max-width: 352px !important;
+    width: 100% !important;
+    padding: 0 !important;
   }
 
   .feature-band .eyebrow {
-    font-size: 12px;
-    color: #6b7280;
-    margin-bottom: 8px;
+    font-size: 8px;
+    line-height: 7px;
+    color: #0D0D0D;
+    font-weight: 600;
+    margin-bottom: 4px;
   }
 
   .band-title {
-    font-size: 20px !important;
-    line-height: 1.3;
-    margin-bottom: 16px;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    letter-spacing: -0.08px;
+    margin-bottom: 8px;
+    color: #000000;
+    text-transform: uppercase;
   }
 
   .band-copy p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 12px;
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 8px;
+    color: #0D0D0D;
   }
 
   .band-image {
-    border-radius: 12px;
-    margin-top: 24px;
+    border-radius: 2.2px;
+    margin-top: 0;
+    width: 168px;
+    height: 280px;
+    object-fit: cover;
+    flex-shrink: 0;
   }
 
-  /* Ensure proper spacing */
+  /* Ensure proper spacing and side-by-side layout */
   .feature-band .row {
-    gap: 24px;
+    gap: 17.61px;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .feature-band .row > .col-12,
+  .feature-band .row > .col-lg-6,
+  .feature-band .row > div[class*="col-"] {
+    padding: 0 !important;
+    max-width: none !important;
+    flex: none !important;
+  }
+
+  .feature-band .row > .col-12:first-child,
+  .feature-band .row > .col-lg-6:first-child,
+  .feature-band .row > div[class*="col-"]:first-child {
+    width: 165.39px !important;
+    flex: none !important;
+    order: 0;
+  }
+
+  .feature-band .row > .col-12:last-child,
+  .feature-band .row > .col-lg-6:last-child,
+  .feature-band .row > div[class*="col-"]:last-child {
+    width: 168px !important;
+    flex: none !important;
+    order: 1;
   }
 
   .intro-layout__inner {
@@ -146,10 +194,26 @@
 /* Additional mobile hero styling */
 @media (max-width: 767px) {
 
-  position: relative;
-  min-height: 260px;
-  overflow: hidden;
-}
+  .page-hero {
+    position: relative;
+    min-height: 260px;
+    overflow: hidden;
+    background: transparent !important;
+  }
+
+  .intro-layout__right {
+    display: block;
+    visibility: visible;
+    width: 100%;
+    flex: auto;
+  }
+
+  .intro-layout__content {
+    display: block;
+    visibility: visible;
+    width: 100%;
+  }
+
 
 .page-hero__img {
   position: absolute;
@@ -158,7 +222,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 1;
 }
 
 .page-hero__title {

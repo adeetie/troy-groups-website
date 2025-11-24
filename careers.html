@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="assets/css/header.tgx.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
   <link rel="stylesheet" href="assets/css/cta-connect.css" />
+  <link rel="stylesheet" href="assets/css/careers.css" />
+  <link rel="stylesheet" href="assets/css/careers-mobile.css" />
 
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -175,91 +177,52 @@
     </h2>
   </section>
 
-  <section class="values">
-    <div class="container container-1280">
-      <div class="values__head">
-        <div class="eyebrow">Our values</div>
-        <h2 class="section-title">Work that makes sense</h2>
-      </div>
 
-      <div class="values__grid">
-        <article class="value-card">
-          <div class="value-card__media"></div>
-          <h3>Smart work</h3>
-          <p>We focus on meaningful work—not busywork.</p>
-        </article>
-
-        <article class="value-card">
-          <div class="value-card__media"></div>
-          <h3>Room to grow</h3>
-          <p>You’ll get space, support, and real chances to level up.</p>
-        </article>
-
-        <article class="value-card">
-          <div class="value-card__media"></div>
-          <h3>People-first culture</h3>
-          <p>Kind people, clear feedback, no egos.</p>
-        </article>
-
-        <article class="value-card">
-          <div class="value-card__media"></div>
-          <h3>Flexible by default</h3>
-          <p>We trust you to work in the way that works best.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
+  
   <section id="partners" class="partners fx-pad">
     <div class="container container-1280">
       <div class="row g-5 align-items-center">
+
         <div class="col-lg-6">
           <div class="partners__copy">
             <p class="partners__eyebrow">Who we are</p>
-            <h2 class="partners__title">
-              YOUR STRATEGIC<br />PARTNERS IN GROWTH
-            </h2>
+            <h2 class="partners__title">YOUR STRATEGIC<br>PARTNERS IN GROWTH</h2>
             <p class="partners__lead">
-              we act as your strategic partners in growth —<br />
-              combining deep insight, trusted relationships, and bold<br />
-              execution to cultivate opportunities, accelerate<br />
+              we act as your strategic partners in growth —<br>
+              combining deep insight, trusted relationships, and bold<br>
+              execution to cultivate opportunities, accelerate<br>
               progress, and build sustainable success together
             </p>
 
             <div class="tgx-ctas">
               <a href="about.html" class="btn tg-btn-outline">About ↗</a>
+
+
             </div>
           </div>
         </div>
 
+
         <div class="col-lg-6">
           <figure class="portrait-frame">
-            <img src="./assets/images/home_who_we_are.png" alt="Portrait" class="portrait-img" />
+            <img src="./assets/images/home_who_we_are.png" alt="Portrait" class="portrait-img">
           </figure>
         </div>
       </div>
     </div>
-  </section>
+    <div class="photo-quote fx-pad">
+      <div class="container container-1280">
+        <div class="pq-wrapper">
+          <img src="assets/images/home_eldo_2.png" alt="Discussion" class="pq-img" />
 
-  <section class="photo-quote fx-pad">
-    <div class="container container-1280">
-      <div class="row pq-row g-0 align-items-stretch">
-        <div class="col-12 col-lg-7">
-          <figure class="pq-frame">
-            <img src="./assets/images/home_eldo_2.png" alt="Discussion" class="pq-img" />
-          </figure>
-        </div>
-
-        <div class="col-12 col-lg-5">
-          <article class="pq-card">
+          <article class="pq-overlay-card">
             <p class="pq-text">
-              Guided by insight and integrity, we craft bespoke strategies
-              that empower growth, maximize value, and redefine financial
-              excellence for our clients.
+              Guided by insight and integrity, we craft bespoke strategies that empower growth, maximize value, and
+              redefine financial excellence for our clients.
             </p>
             <div class="pq-meta">
-              <div class="pq-name">Eldo Korita</div>
-              <div class="pq-role">Founder &amp; CEO</div>
+              <h3 class="pq-name">Eldo Korita</h3>
+              <p class="pq-role">Founder & CEO</p>
             </div>
           </article>
         </div>
@@ -280,7 +243,10 @@
         </div>
         <div class="roles__filters">
           <span class="muted">Location:</span>
-          <button class="select">View all</button>
+          <select class="select" id="location-filter">
+            <option value="all">View all</option>
+            <option value="Melbourne, Australia">Melbourne, Australia</option>
+          </select>
         </div>
       </header>
 
@@ -304,6 +270,7 @@
               <span class="meta">Full-time</span>
               <span class="meta">80k - 100k</span>
             </div>
+            <a href="#" class="job__apply">Apply</a>
           </article>
 
           <article class="job">
@@ -318,6 +285,7 @@
               <span class="meta">Full-time</span>
               <span class="meta">80k - 100k</span>
             </div>
+            <a href="#" class="job__apply">Apply</a>
           </article>
         </div>
       </div>
@@ -358,6 +326,7 @@
               <span class="meta">Full-time</span>
               <span class="meta">$80k - $100k</span>
             </div>
+            <a href="#" class="job__apply">Apply</a>
           </article>
 
           <article class="job">
@@ -373,6 +342,7 @@
               <span class="meta">Full-time</span>
               <span class="meta">$80k - $100k</span>
             </div>
+            <a href="#" class="job__apply">Apply</a>
           </article>
         </div>
       </div>
@@ -382,6 +352,53 @@
       </div>
     </div>
   </section>
+
+  <script>
+    // Location filter functionality for careers page
+    (function() {
+      const locationFilter = document.getElementById('location-filter');
+      if (!locationFilter) return;
+
+      const jobCards = document.querySelectorAll('.job');
+      const roleRows = document.querySelectorAll('.roles__row');
+
+      function filterJobs() {
+        const selectedLocation = locationFilter.value;
+
+        jobCards.forEach(job => {
+          const locationPill = job.querySelector('.pill');
+          if (!locationPill) return;
+
+          const jobLocation = locationPill.textContent.trim();
+
+          if (selectedLocation === 'all' || jobLocation === selectedLocation) {
+            job.style.display = '';
+          } else {
+            job.style.display = 'none';
+          }
+        });
+
+        // Hide/show entire role rows if all jobs in that category are hidden
+        roleRows.forEach(row => {
+          const cards = row.querySelector('.roles__cards');
+          if (!cards) return;
+
+          const visibleJobs = Array.from(cards.querySelectorAll('.job')).filter(
+            job => job.style.display !== 'none'
+          );
+
+          if (visibleJobs.length === 0) {
+            row.style.display = 'none';
+          } else {
+            row.style.display = '';
+          }
+        });
+      }
+
+      locationFilter.addEventListener('change', filterJobs);
+    })();
+  </script>
+
 
   <section class="gt-wrap tgx-scope-getintouch">
     <style>
