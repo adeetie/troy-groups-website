@@ -254,3 +254,34 @@
   gap: 10px;
   margin-top: 12px;
 }
+
+/* Mobile intro-layout visibility fix */
+@media (max-width: 767px) {
+  .intro-layout {
+    padding: 32px 16px;
+  }
+
+  .intro-layout__inner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .intro-layout__right {
+    display: block !important;
+    visibility: visible !important;
+    overflow: visible !important;
+    width: 100%;
+  }
+
+  .intro-layout__content {
+    display: block !important;
+    visibility: visible !important;
+    width: 100%;
+  }
+
+  .intro-layout__text-wrap {
+    display: block !important;
+    visibility: visible !important;
+    width: 100%;
+  }
+}

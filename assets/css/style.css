@@ -8019,3 +8019,10 @@ body {
   margin: 0 auto;
   padding: 0 2.5vw;
 }
+
+@media (max-width: 575.98px) {
+    .intro-layout__title {
+        font-size: 24px;
+        line-height: 29.60px;
+    }
+}

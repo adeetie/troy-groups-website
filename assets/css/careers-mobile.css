@@ -1,25 +1,38 @@
 /* Careers Page Mobile Styles */
 
-@media (max-width: 767px) {
+@media (max-width: 991.98px) {
   /* Our culture section - intro-layout */
   .intro-layout {
     padding: 32px 16px;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
   }
 
   .intro-layout__inner {
     display: flex !important;
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 16px;
   }
 
-  .intro-layout__left,
+  .intro-layout__left {
+    width: 100%;
+  }
+
   .intro-layout__right {
     display: block !important;
     visibility: visible !important;
-    width: 100% !important;
+    overflow: visible !important;
+    width: 100%;
+  }
+
+  .intro-layout__content {
+    display: block !important;
+    visibility: visible !important;
+    width: 100%;
+  }
+
+  .intro-layout__text-wrap {
+    display: block !important;
+    visibility: visible !important;
+    width: 100%;
   }
 
   .intro-layout__eyebrow {
@@ -265,5 +278,9 @@
     height: auto;
     border-radius: 12px;
   }
-}
 
+  /* Hide "Get in touch" image on mobile */
+  .tgx-scope-getintouch .gt-hero {
+    display: none !important;
+  }
+}
