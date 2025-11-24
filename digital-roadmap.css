@@ -1,0 +1,70 @@
+body{
+  color: #000;
+  background: #fff;
+}.page-wrap{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}.hero-title{
+  font:
+    700 clamp(38px, 6vw, 64px) / 1.05 "Fira Sans Extra Condensed",
+    "Montserrat",
+    system-ui;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}.lead-side{
+  font:
+    400 17px / 1.6 "Inter",
+    sans-serif;
+  color: #444;
+}.main-img img{
+  width: 100%;
+  border-radius: 12px;
+  margin: 2rem 0 3rem;
+}.section-block{
+  margin-bottom: 2.5rem;
+}.section-block h4{
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0.75rem;
+}.section-block ul{
+  margin: 0;
+  padding-left: 1.25rem;
+}.section-block ul li{
+  margin-bottom: 0.35rem;
+}.mini-card{
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 24px;
+}.mini-card img{
+  width: 54px;
+  height: 54px;
+  border-radius: 6px;
+  object-fit: cover;
+}.mini-card .label{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}.cta-lite{
+  position: relative;
+  border-top: 1px solid #e4e4e4;
+  background: #fff;
+  margin-top: 4rem;
+}.cta-lite .big{
+  color: #2465bf;
+  font:
+    700 clamp(36px, 6vw, 90px) / 1 "Inter",
+    system-ui;
+}.cta-lite .soft-dot{
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  width: 385px;
+  height: 385px;
+  background: rgba(0, 107, 255, 0.4);
+  filter: blur(60px);
+  border-radius: 345px;
+  opacity: 0.75;
+}

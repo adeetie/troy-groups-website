@@ -26,6 +26,7 @@
 
 
   <script src="assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="assets/css/index-mobile.css">
 </head>
 
 <body>
@@ -220,7 +221,6 @@
   </section>
 
 
-
   <section class="block" id="what-we-do">
     <div class="container-1280">
       <div class="row g-5 align-items-start">
@@ -229,36 +229,28 @@
         </aside>
 
         <div class="col-lg-7">
-          <h2 class="h2 up">
-            Change is inevitable.<br />Growth is a choice.
-          </h2>
-          <p class="lead-tight">
-            Growing companies come to us when things feel harder than they
-            should be. Maybe decisions take longer, processes break down, or
-            your team is stretched thin.
-          </p>
-          <p class="lead-tight mb-3">
-            We help you step back, identify what’s slowing you down, and build
-            practical solutions that support where you’re headed—without
-            overcomplicating the process.
-          </p>
+          <h2 class="h2 up">Change is inevitable.<br>Growth is a choice.</h2>
+          <p class="lead-tight">Growing companies come to us when things feel harder than they should be. Maybe
+            decisions take longer, processes break down, or your team is stretched thin.</p>
+          <p class="lead-tight mb-3">We help you step back, identify what’s slowing you down, and build practical
+            solutions that support where you’re headed—without overcomplicating the process.</p>
+
 
           <div class="ceo-card">
             <div class="ceo">
-              <img src="./assets/images/home_eldo.png" alt="CEO" class="ceo__img" />
+              <img src="./assets/images/home_eldo.png" alt="CEO" class="ceo__img">
               <div class="ceo__text">
                 <h3 class="ceo__name">Eldo Korita</h3>
                 <p class="ceo__role">CEO &amp; Founder</p>
                 <p class="ceo__blurb">
-                  A driven finance executive and strategic investor, bridging
-                  capital and innovation to fuel scalable growth and lasting
-                  market impact.
+                  A driven finance executive and strategic investor, bridging capital and innovation to fuel scalable
+                  growth and lasting market impact.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3"></div>
         </div>
+        <div class="col-lg-3"></div>
       </div>
     </div>
   </section>
@@ -266,40 +258,44 @@
   <section class="kpi-lite">
     <div class="container container-1280">
       <ul class="kpi-lite__list">
+
         <li class="kpi-lite__item">
           <span class="kpi-lite__bubble">
             <span class="kpi-lite__num">27+</span>
             <img class="kpi-lite__icon" src="./assets/images/icons/solar_star-bold.svg" alt="Star" width="22"
-              height="22" loading="lazy" />
+              height="22" loading="lazy">
           </span>
-          <p class="kpi-lite__label">Years Of<br />Excellence</p>
+          <p class="kpi-lite__label">Years Of<br>Excellence</p>
         </li>
+
 
         <li class="kpi-lite__item">
           <span class="kpi-lite__bubble">
             <span class="kpi-lite__num">54</span>
             <img class="kpi-lite__icon" src="./assets/images/icons/mdi_fire.svg" alt="Fire" width="22" height="22"
-              loading="lazy" />
+              loading="lazy">
           </span>
-          <p class="kpi-lite__label">Professional<br />Employees</p>
+          <p class="kpi-lite__label">Professional<br>Employees</p>
         </li>
+
 
         <li class="kpi-lite__item">
           <span class="kpi-lite__bubble">
             <span class="kpi-lite__num">04</span>
             <img class="kpi-lite__icon" src="./assets/images/icons/mdi_fire.svg" alt="Fire" width="22" height="22"
-              loading="lazy" />
+              loading="lazy">
           </span>
-          <p class="kpi-lite__label">Our Offices<br />Worldwide</p>
+          <p class="kpi-lite__label">Our Offices<br>Worldwide</p>
         </li>
+
 
         <li class="kpi-lite__item">
           <span class="kpi-lite__bubble">
             <span class="kpi-lite__num">116</span>
             <img class="kpi-lite__icon" src="./assets/images/icons/weui_done2-filled.svg" alt="Check" width="22"
-              height="22" loading="lazy" />
+              height="22" loading="lazy">
           </span>
-          <p class="kpi-lite__label">Our Satisfied<br />Clients</p>
+          <p class="kpi-lite__label">Our Satisfied<br>Clients</p>
         </li>
       </ul>
     </div>
@@ -715,6 +711,11 @@
         </div>
       </div>
 
+      <a href="#" class="view-more-btn d-md-none"
+        onclick="event.preventDefault(); document.querySelector('.leadership-section').classList.add('expanded'); this.style.display='none';">
+        View all Members →
+      </a>
+
       <div class="row justify-content-center g-5" data-aos="fade-up" data-aos-delay="250">
         <div class="col-6 col-md-4 col-lg-3">
           <div class="leader-card">
@@ -882,28 +883,35 @@
     </div>
   </section>
 
-  <section class="work-cta py-5">
+  <section id="career" class="partners fx-pad">
     <div class="container container-1280">
-      <div class="row align-items-center g-4">
-        <div class="col-12 col-md-5" data-aos="fade-right">
-          <div class="work-photo">
-            <img src="assets/images/about_career.png" alt="Professional portrait" />
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-6">
+          <div class="partners__copy">
+            <p class="partners__eyebrow">Careers</p>
+            <h2 class="partners__title">DO WORK THAT MATTERS<br>(AND LIGHTS YOU UP)</h2>
+            <p class="partners__lead">
+              We believe your work should inspire you, and our team is<br>
+              built on passion, creativity, and the freedom to do what you<br>
+              craft, and help build solutions that transform businesses and<br>
+              empower future growth.
+            </p>
+            <p class="partners__lead">
+              Let's do something incredible together.
+            </p>
+
+            <div class="tgx-ctas">
+              <a href="careers.html" class="btn tg-btn-outline">Career ↗</a>
+            </div>
           </div>
         </div>
 
-        <div class="col-12 col-md-7" data-aos="fade-left">
-          <p class="kicker mb-2">Careers</p>
-          <h3 class="work-heading mb-2">
-            DO WORK THAT MATTERS<br />
-            (AND LIGHTS YOU UP)
-          </h3>
-          <p class="work-copy mb-3">
-            Join a team where curiosity meets craft. We back bold ideas with
-            real ownership, mentorship, and the space to do your best work.
-          </p>
-          <div class="d-flex gap-2 flex-wrap">
-            <a href="careers.html" class="btn btn-brand">Career ↗</a>
-          </div>
+
+        <div class="col-lg-6">
+          <figure class="portrait-frame">
+            <img src="./assets/images/about_career.png" alt="Career" class="portrait-img">
+          </figure>
         </div>
       </div>
     </div>
