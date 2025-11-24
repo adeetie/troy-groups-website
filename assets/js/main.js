@@ -576,5 +576,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Toggle line break in intro eyebrow for mobile
+function toggleLineBreak() {
+  const brElement = document.querySelector('.intro-layout__eyebrow br');
+  if (brElement) {
+    if (window.innerWidth <= 768) {
+      brElement.style.display = 'none';
+    } else {
+      brElement.style.display = 'inline';
+    }
+  }
+}
+
+// Run on load and resize
+window.addEventListener('DOMContentLoaded', toggleLineBreak);
+window.addEventListener('resize', toggleLineBreak);
+
 /* Locked Hero Scaling */
 /* Hero V2 - No JS needed with viewport units! */
